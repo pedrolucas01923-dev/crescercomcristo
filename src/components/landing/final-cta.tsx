@@ -1,3 +1,4 @@
+// Início da Seção de Chamada Final para Ação (CTA)
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -9,9 +10,9 @@ export function FinalCTA() {
     const finalCtaImage = PlaceHolderImages.find((img) => img.id === 'final-cta-mockup');
 
   return (
-    <section id="final-cta" className="w-full py-16 md:py-24 bg-background">
+    <section id="final-cta" className="w-full py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="bg-secondary rounded-2xl shadow-2xl p-8 md:p-12 overflow-hidden">
+        <div className="bg-secondary/30 rounded-2xl shadow-2xl p-8 md:p-12 overflow-hidden">
             <div className="grid gap-8 md:grid-cols-2 md:items-center">
                 <div className="space-y-6 text-center md:text-left">
                     <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl text-primary">
@@ -44,20 +45,20 @@ export function FinalCTA() {
                         </div>
                     )}
                     
-                    <Button asChild size="lg" className="w-full md:w-auto text-xl py-8 shadow-lg bg-accent text-accent-foreground hover:bg-accent/90">
+                    <Button asChild size="lg" className="w-full md:w-auto text-xl py-8 shadow-lg bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">
                         <Link href="#">✝️ Quero Ensinar com Amor — Comprar Agora</Link>
                     </Button>
-                    <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
-                        <div className="flex items-center gap-1">
-                            <Zap className="h-4 w-4" />
-                            <span>Oferta por tempo limitado</span>
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-base text-muted-foreground">
+                        <div className="flex items-center gap-2">
+                            <Zap className="h-5 w-5" />
+                            <span>Oferta limitada</span>
                         </div>
-                        <div className="flex items-center gap-1">
-                            <DownloadCloud className="h-4 w-4" />
+                        <div className="flex items-center gap-2">
+                            <DownloadCloud className="h-5 w-5" />
                             <span>Download imediato</span>
                         </div>
-                         <div className="flex items-center gap-1">
-                            <BadgeCheck className="h-4 w-4" />
+                         <div className="flex items-center gap-2">
+                            <BadgeCheck className="h-5 w-5" />
                             <span>Garantia de satisfação</span>
                         </div>
                     </div>
@@ -80,3 +81,4 @@ export function FinalCTA() {
     </section>
   );
 }
+// Fim da Seção de Chamada Final para Ação (CTA)
