@@ -1,6 +1,7 @@
 // Importação dos componentes da página
 import { Header } from '@/components/landing/header';
 import { Hero } from '@/components/landing/hero';
+import { Usp } from '@/components/landing/usp';
 import { ProductFeatures } from '@/components/landing/product-features';
 import { Advantages } from '@/components/landing/advantages';
 import { Bonuses } from '@/components/landing/bonuses';
@@ -22,6 +23,12 @@ export default function Home() {
         {/* Início da Seção Hero */}
         <Hero />
         {/* Fim da Seção Hero */}
+
+        {/* Início da Seção de Proposta de Valor Única (USP) */}
+        <ScrollRevealSection>
+          <Usp />
+        </ScrollRevealSection>
+        {/* Fim da Seção de Proposta de Valor Única (USP) */}
 
         {/* Início da Seção de Características do Produto */}
         <ScrollRevealSection>
