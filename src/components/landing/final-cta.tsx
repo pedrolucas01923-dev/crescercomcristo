@@ -48,7 +48,7 @@ export function FinalCTA() {
                     <Button asChild size="lg" className="w-full md:w-auto text-xl py-8 shadow-lg bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">
                         <Link href="#">✝️ Quero Ensinar com Amor — Comprar Agora</Link>
                     </Button>
-                    <div className="flex flex-col sm:flex-row items-center justify-around gap-4 text-base text-muted-foreground w-full">
+                    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-base text-muted-foreground w-full">
                         <div className="flex items-center gap-2">
                             <Zap className="h-5 w-5" />
                             <span>Oferta limitada</span>
