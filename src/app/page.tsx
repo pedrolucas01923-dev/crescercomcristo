@@ -7,6 +7,7 @@ import { Bonuses } from '@/components/landing/bonuses';
 import { Testimonials } from '@/components/landing/testimonials';
 import { FinalCTA } from '@/components/landing/final-cta';
 import { Footer } from '@/components/landing/footer';
+import { ScrollRevealSection } from '@/components/scroll-reveal-section';
 
 // Componente principal da página Home
 export default function Home() {
@@ -23,23 +24,33 @@ export default function Home() {
         {/* Fim da Seção Hero */}
 
         {/* Início da Seção de Características do Produto */}
-        <ProductFeatures />
+        <ScrollRevealSection>
+          <ProductFeatures />
+        </ScrollRevealSection>
         {/* Fim da Seção de Características do Produto */}
 
         {/* Início da Seção de Vantagens */}
-        <Advantages />
+        <ScrollRevealSection>
+          <Advantages />
+        </ScrollRevealSection>
         {/* Fim da Seção de Vantagens */}
 
         {/* Início da Seção de Bônus */}
-        <Bonuses />
+        <ScrollRevealSection>
+          <Bonuses />
+        </ScrollRevealSection>
         {/* Fim da Seção de Bônus */}
 
         {/* Início da Seção de Depoimentos */}
-        <Testimonials />
+        <ScrollRevealSection>
+          <Testimonials />
+        </ScrollRevealSection>
         {/* Fim da Seção de Depoimentos */}
 
         {/* Início da Seção de Chamada Final para Ação (CTA) */}
-        <FinalCTA />
+        <ScrollRevealSection>
+          <FinalCTA />
+        </ScrollRevealSection>
         {/* Fim da Seção de Chamada Final para Ação (CTA) */}
       </main>
       {/* Fim do Conteúdo principal */}
