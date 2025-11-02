@@ -16,27 +16,23 @@ export function ScrollRevealSection({ children, className }: ScrollRevealSection
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Quando a seção entra na tela
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          // Para de observar o elemento para não repetir a animação
-          observer.unobserve(entry.target);
-        }
+        // Atualiza o estado de visibilidade baseado se o elemento está ou não na tela
+        setIsVisible(entry.isIntersecting);
       },
       {
         threshold: 0.1, // A animação começa quando 10% do elemento está visível
       }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentRef = sectionRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     // Limpa o observador quando o componente é desmontado
     return () => {
-      if (sectionRef.current) {
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        observer.unobserve(sectionRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
