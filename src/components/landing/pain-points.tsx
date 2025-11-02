@@ -28,7 +28,7 @@ export function PainPoints() {
           {painPoints.map((point, index) => {
             const Icon = point.icon;
             return (
-              <div key={index} className="flex flex-col items-center text-center gap-4 p-6 bg-secondary/30 rounded-xl shadow-md border-2 border-transparent transition-all duration-300 ease-in-out hover:shadow-accent/40 hover:shadow-lg hover:border-accent/50 hover:scale-105">
+              <div key={index} className="flex flex-col items-center text-center gap-4 p-6 bg-secondary/30 rounded-xl shadow-lg shadow-accent/20 border-2 border-transparent transition-all duration-300 ease-in-out hover:shadow-accent/40 hover:border-accent/50 hover:scale-105">
                 <div className="bg-white p-4 rounded-full shadow-inner">
                   <Icon className="h-10 w-10 text-primary" />
                 </div>
