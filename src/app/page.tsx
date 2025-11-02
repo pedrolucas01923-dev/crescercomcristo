@@ -1,5 +1,4 @@
 // Importação dos componentes da página
-import { Header } from '@/components/landing/header';
 import { Hero } from '@/components/landing/hero';
 import { PainPoints } from '@/components/landing/pain-points';
 import { ProductFeatures } from '@/components/landing/product-features';
@@ -15,10 +14,6 @@ import { ScrollRevealSection } from '@/components/scroll-reveal-section';
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background font-body">
-      {/* Início do Cabeçalho */}
-      <Header />
-      {/* Fim do Cabeçalho */}
-      
       {/* Conteúdo principal da página */}
       <main className="flex-grow">
         {/* Início da Seção Hero */}
