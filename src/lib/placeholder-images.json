@@ -61,6 +61,18 @@
       "imageHint": "mother child"
     },
     {
+      "id": "testimonial-4",
+      "description": "Portrait of a happy father.",
+      "imageUrl": "https://images.unsplash.com/photo-1624046768705-8603f683231c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoYXBweSUyMGZhdGhlcnxlbnwwfHx8fDE3NjIxMTQwNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy father"
+    },
+    {
+      "id": "testimonial-5",
+      "description": "Portrait of a happy sunday school teacher.",
+      "imageUrl": "https://images.unsplash.com/photo-1489278353717-f64c6ee8a4d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoYXBweSUyMHRlYWNoZXJ8ZW58MHx8fHwxNzYyMDUxMDU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy teacher"
+    },
+    {
       "id": "final-cta-mockup",
       "description": "Mockup of ebooks for the final CTA section",
       "imageUrl": "https://images.unsplash.com/photo-1603703479763-01d0ce416b56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlYm9va3MlMjBjb2xsZWN0aW9ufGVufDB8fHx8MTc2MjExMjQzNHww&ixlib=rb-4.1.0&q=80&w=1080",

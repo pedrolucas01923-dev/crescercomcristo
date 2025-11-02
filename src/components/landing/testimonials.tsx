@@ -1,6 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Star, Users } from 'lucide-react';
 
 // Lista de depoimentos
 const testimonials = [
@@ -8,19 +9,36 @@ const testimonials = [
     id: 'testimonial-1',
     name: 'Ana Paula',
     role: 'Catequista',
+    rating: 5,
     quote: 'As crianças da catequese ficaram encantadas! O material é lindo e fácil de usar. Uma verdadeira bênção para o nosso ministério.',
   },
   {
     id: 'testimonial-2',
     name: 'Rafael',
     role: 'Pai e Professor',
+    rating: 5,
     quote: 'Meu filho aprendeu os 10 mandamentos brincando! A qualidade das ilustrações e a linguagem simples fazem toda a diferença. Recomendo muito.',
   },
   {
     id: 'testimonial-3',
     name: 'Mariana',
     role: 'Mãe',
+    rating: 5,
     quote: 'Finalmente encontrei um material que me ajuda a ensinar a Bíblia para minha filha de 5 anos de um jeito que ela entende e ama. Estamos adorando!',
+  },
+   {
+    id: 'testimonial-4',
+    name: 'Carlos Alberto',
+    role: 'Pai',
+    rating: 5,
+    quote: 'A coleção é fantástica! Os livros de colorir são um sucesso aqui em casa e as histórias são contadas de uma forma que prende a atenção.',
+  },
+  {
+    id: 'testimonial-5',
+    name: 'Lúcia Marques',
+    role: 'Professora de Escola Dominical',
+    rating: 5,
+    quote: 'Material de altíssima qualidade. Didático, bonito e fiel às escrituras. Facilitou muito o meu planejamento de aulas.',
   },
 ];
 
@@ -42,7 +60,12 @@ export function Testimonials() {
             const image = PlaceHolderImages.find((img) => img.id === testimonial.id);
             return (
               <Card key={testimonial.id} className="bg-card flex flex-col shadow-lg border-border">
-                <CardContent className="flex-grow p-6">
+                <CardContent className="flex-grow p-6 space-y-4">
+                  <div className="flex">
+                    {Array.from({ length: testimonial.rating }).map((_, i) => (
+                      <Star key={i} className="h-5 w-5 text-accent fill-accent" />
+                    ))}
+                  </div>
                   <blockquote className="text-lg text-foreground">
                     "{testimonial.quote}"
                   </blockquote>
@@ -62,6 +85,14 @@ export function Testimonials() {
               </Card>
             );
           })}
+        </div>
+        <div className="mt-16 text-center">
+            <div className="inline-flex items-center justify-center gap-4 rounded-full bg-secondary px-8 py-4 shadow-md">
+                <Users className="h-8 w-8 text-primary" />
+                <p className="text-xl font-bold text-foreground">
+                    Mais de <span className="text-primary">1.000 pais e educadores</span> já aprovaram!
+                </p>
+            </div>
         </div>
       </div>
     </section>
