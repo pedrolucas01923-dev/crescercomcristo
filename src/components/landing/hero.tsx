@@ -1,3 +1,4 @@
+// Início da Seção Hero
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -7,19 +8,18 @@ export function Hero() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-mockup');
 
   return (
-    <section id="hero" className="w-full pt-32 pb-16 md:pt-48 md:pb-24 bg-background relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-full bg-secondary/30 -z-10"></div>
+    <section id="hero" className="w-full pt-32 pb-16 md:pt-48 md:pb-24 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-8 md:grid-cols-2 md:items-center">
           <div className="space-y-6 text-center md:text-left">
             <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-foreground">
-              <span className="text-primary">Ensine valores cristãos</span> de forma divertida e inesquecível!
+              Ensine <span className="text-primary">valores cristãos</span> de forma divertida e inesquecível!
             </h1>
             <p className="max-w-xl mx-auto md:mx-0 text-lg text-muted-foreground md:text-xl">
-              Uma coleção completa de ebooks e atividades cristãs para crianças — ideal para pais, professores e catequistas que desejam unir fé, diversão e aprendizado!
+              Uma coleção completa de ebooks ilustrados para ensinar a fé às crianças com alegria e propósito.
             </p>
             <div className="flex justify-center md:justify-start">
-              <Button asChild size="lg" className="text-lg">
+              <Button asChild size="lg" className="text-lg rounded-full">
                 <Link href="#final-cta">👉 Quero o Kit Completo Agora!</Link>
               </Button>
             </div>
@@ -42,3 +42,4 @@ export function Hero() {
     </section>
   );
 }
+// Fim da Seção Hero
