@@ -9,11 +9,16 @@ import { Faq } from '@/components/landing/faq';
 import { FinalCTA } from '@/components/landing/final-cta';
 import { Footer } from '@/components/landing/footer';
 import { ScrollRevealSection } from '@/components/scroll-reveal-section';
+import { Header } from '@/components/landing/header';
 
 // Componente principal da página Home
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background font-body">
+      {/* Início do Cabeçalho */}
+      <Header />
+      {/* Fim do Cabeçalho */}
+      
       {/* Conteúdo principal da página */}
       <main className="flex-grow">
         {/* Início da Seção Hero */}
