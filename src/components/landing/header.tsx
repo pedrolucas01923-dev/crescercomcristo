@@ -40,19 +40,21 @@ export function Header() {
           <Logo />
           <span className="sr-only">Crescendo com Cristo Home</span>
         </Link>
-        <div className="hidden md:flex items-center gap-2 text-sm text-center">
-          <p className="font-medium text-foreground">
-            🎁 Oferta especial: desconto imperdível nas próximas <CountdownTimer />
+        <div className="hidden md:flex flex-col items-center text-sm text-center">
+          <p className="font-bold text-primary tracking-wider">
+            OFERTA IMPERDÍVEL
           </p>
+          <CountdownTimer />
         </div>
         <Button asChild>
-          <Link href="#final-cta">Quero Garantir Meu Desconto</Link>
+          <Link href="#final-cta">Quero o Kit Completo!</Link>
         </Button>
       </div>
-      <div className={cn("md:hidden py-2 text-center text-sm transition-colors duration-300", isScrolled ? "bg-secondary/80" : "bg-transparent")}>
-        <p className="font-medium text-foreground">
-          🎁 Oferta especial: <CountdownTimer />
+      <div className={cn("md:hidden py-2 text-center text-sm transition-colors duration-300 flex flex-col items-center", isScrolled ? "bg-secondary/80" : "bg-transparent")}>
+        <p className="font-bold text-primary tracking-wider">
+          OFERTA IMPERDÍVEL
         </p>
+        <CountdownTimer />
       </div>
     </header>
   );
