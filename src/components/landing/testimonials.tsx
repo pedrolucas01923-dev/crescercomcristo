@@ -1,3 +1,6 @@
+// src/components/landing/testimonials.tsx
+
+// Início da Seção de Depoimentos
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -40,15 +43,22 @@ const testimonials = [
     rating: 5,
     quote: 'Material de altíssima qualidade. Didático, bonito e fiel às escrituras. Facilitou muito o meu planejamento de aulas.',
   },
+  {
+    id: 'testimonial-6',
+    name: 'Juliana Costa',
+    role: 'Educadora Infantil',
+    rating: 5,
+    quote: 'Um recurso pedagógico incrível! As atividades são criativas e ajudam a fixar os ensinamentos de forma lúdica. Nossos alunos amaram.',
+  },
 ];
 
 // Componente da seção de depoimentos
 export function Testimonials() {
   return (
-    <section id="testimonials" className="w-full py-16 md:py-24 bg-background">
+    <section id="testimonials" className="w-full py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-          <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+          <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-foreground">
             💖 O que pais e educadores estão dizendo
           </h2>
           <p className="max-w-3xl text-muted-foreground md:text-xl">
@@ -59,20 +69,23 @@ export function Testimonials() {
           {testimonials.map((testimonial) => {
             const image = PlaceHolderImages.find((img) => img.id === testimonial.id);
             return (
-              <Card key={testimonial.id} className="bg-card flex flex-col shadow-lg border-border">
+              <Card key={testimonial.id} className="bg-card flex flex-col shadow-lg rounded-2xl overflow-hidden border-border">
                 <CardContent className="flex-grow p-6 space-y-4">
-                  <div className="flex">
-                    {Array.from({ length: testimonial.rating }).map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-accent fill-accent" />
-                    ))}
+                  <div className="flex items-center gap-2">
+                    <div className="flex">
+                      {Array.from({ length: testimonial.rating }).map((_, i) => (
+                        <Star key={i} className="h-5 w-5 text-accent fill-accent" />
+                      ))}
+                    </div>
+                    <span className="font-bold text-sm text-muted-foreground">({testimonial.rating}/5)</span>
                   </div>
-                  <blockquote className="text-lg text-foreground">
+                  <blockquote className="text-lg text-foreground italic">
                     "{testimonial.quote}"
                   </blockquote>
                 </CardContent>
-                <CardFooter className="flex items-center gap-4 p-6 pt-4 bg-secondary/50 rounded-b-lg">
+                <CardFooter className="flex items-center gap-4 p-6 pt-4 bg-secondary/30 rounded-b-none">
                   {image && (
-                    <Avatar className="border-2 border-accent">
+                    <Avatar className="border-2 border-accent h-12 w-12">
                       <AvatarImage src={image.imageUrl} alt={testimonial.name} data-ai-hint={image.imageHint} />
                       <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                     </Avatar>
@@ -90,7 +103,7 @@ export function Testimonials() {
             <div className="inline-flex items-center justify-center gap-4 rounded-full bg-secondary px-8 py-4 shadow-md">
                 <Users className="h-8 w-8 text-primary" />
                 <p className="text-xl font-bold text-foreground">
-                    Mais de <span className="text-primary">1.000 pais e educadores</span> já aprovaram!
+                    Junte-se a mais de <span className="text-primary">1.000 pais e educadores</span> que já aprovaram!
                 </p>
             </div>
         </div>
@@ -98,3 +111,4 @@ export function Testimonials() {
     </section>
   );
 }
+// Fim da Seção de Depoimentos
