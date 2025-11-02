@@ -23,7 +23,7 @@ export function CountdownTimer() {
   const seconds = timeLeft % 60;
 
   return (
-    <span className="font-mono font-bold text-primary animate-pulse-subtle">
+    <span className="font-mono font-bold text-accent animate-pulse-subtle">
       {String(hours).padStart(2, '0')}:{String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}
     </span>
   );

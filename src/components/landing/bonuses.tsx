@@ -23,10 +23,10 @@ const bonuses = [
 // Componente da seção de bônus
 export function Bonuses() {
   return (
-    <section id="bonuses" className="w-full py-16 md:py-24 bg-white">
+    <section id="bonuses" className="w-full py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-          <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground font-medium">Bônus</div>
+          <div className="inline-block rounded-lg bg-accent px-3 py-1 text-sm text-accent-foreground font-medium">Bônus</div>
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             🎉 E ainda tem Bônus Imperdíveis!
           </h2>
@@ -56,7 +56,7 @@ export function Bonuses() {
                   <CardDescription className="text-base">{bonus.description}</CardDescription>
                 </CardContent>
                 <CardFooter>
-                  <Button asChild variant="secondary" className="w-full bg-accent text-accent-foreground hover:bg-accent/80">
+                  <Button asChild className="w-full">
                     <Link href="#final-cta">✅ Quero esses bônus também!</Link>
                   </Button>
                 </CardFooter>

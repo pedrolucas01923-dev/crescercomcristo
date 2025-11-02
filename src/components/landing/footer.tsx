@@ -5,7 +5,7 @@ import { Logo } from '@/components/logo';
 // Componente do rodapé
 export function Footer() {
   return (
-    <footer className="bg-white border-t">
+    <footer className="bg-background border-t">
       <div className="container mx-auto px-4 md:px-6 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex flex-col items-center md:items-start gap-2">
@@ -15,9 +15,9 @@ export function Footer() {
                 </p>
             </div>
             <div className="flex gap-4 text-sm">
-                <Link href="#" className="text-muted-foreground hover:text-foreground">Política de Privacidade</Link>
-                <Link href="#" className="text-muted-foreground hover:text-foreground">Termos de Uso</Link>
-                <Link href="#" className="text-muted-foreground hover:text-foreground">Suporte</Link>
+                <Link href="#" className="text-muted-foreground hover:text-primary">Política de Privacidade</Link>
+                <Link href="#" className="text-muted-foreground hover:text-primary">Termos de Uso</Link>
+                <Link href="#" className="text-muted-foreground hover:text-primary">Suporte</Link>
             </div>
             <div className="flex gap-4">
                 <Link href="#" aria-label="Facebook">

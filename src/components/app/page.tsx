@@ -12,7 +12,7 @@ import { ScrollRevealSection } from '@/components/scroll-reveal-section';
 // Componente principal da página Home
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-background">
+    <div className="flex flex-col min-h-screen bg-background text-foreground">
       {/* Início do Cabeçalho */}
       <Header />
       {/* Fim do Cabeçalho */}

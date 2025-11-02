@@ -7,12 +7,13 @@ export function Hero() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-mockup');
 
   return (
-    <section id="hero" className="w-full pt-32 pb-16 md:pt-48 md:pb-24 bg-white">
+    <section id="hero" className="w-full pt-32 pb-16 md:pt-48 md:pb-24 bg-background relative overflow-hidden">
+      <div className="absolute top-0 left-0 w-full h-full bg-secondary/30 -z-10"></div>
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-8 md:grid-cols-2 md:items-center">
           <div className="space-y-6 text-center md:text-left">
             <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-foreground">
-              🌈 Ensine valores cristãos de forma divertida e inesquecível!
+              <span className="text-primary">Ensine valores cristãos</span> de forma divertida e inesquecível!
             </h1>
             <p className="max-w-xl mx-auto md:mx-0 text-lg text-muted-foreground md:text-xl">
               Uma coleção completa de ebooks e atividades cristãs para crianças — ideal para pais, professores e catequistas que desejam unir fé, diversão e aprendizado!

@@ -27,7 +27,7 @@ const advantages = [
 // Componente da seção de vantagens
 export function Advantages() {
   return (
-    <section id="advantages" className="w-full py-16 md:py-24 bg-white">
+    <section id="advantages" className="w-full py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -43,7 +43,7 @@ export function Advantages() {
             return (
               <div key={index} className="flex items-start gap-4">
                 <div className="bg-secondary p-3 rounded-full">
-                  <Icon className="h-6 w-6 text-secondary-foreground" />
+                  <Icon className="h-6 w-6 text-primary" />
                 </div>
                 <p className="text-lg text-muted-foreground pt-2">{advantage.text}</p>
               </div>

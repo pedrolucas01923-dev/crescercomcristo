@@ -45,10 +45,10 @@ function FeatureCard({ icon: Icon, title, description, imageId }: FeatureCardPro
   const image = PlaceHolderImages.find((img) => img.id === imageId);
 
   return (
-    <Card className="flex flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl bg-card">
+    <Card className="flex flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl bg-card border-2 border-transparent hover:border-accent">
       <CardHeader className="flex flex-row items-center gap-4 space-y-0 pb-4">
         <div className="bg-secondary p-3 rounded-full">
-          <Icon className="h-6 w-6 text-secondary-foreground" />
+          <Icon className="h-6 w-6 text-primary" />
         </div>
         <CardTitle className="font-headline text-xl">{title}</CardTitle>
       </CardHeader>
@@ -74,7 +74,7 @@ function FeatureCard({ icon: Icon, title, description, imageId }: FeatureCardPro
 // Componente da seção de características do produto
 export function ProductFeatures() {
   return (
-    <section id="features" className="w-full py-16 md:py-24 bg-white">
+    <section id="features" className="w-full py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">

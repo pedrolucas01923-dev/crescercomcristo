@@ -27,7 +27,7 @@ const testimonials = [
 // Componente da seção de depoimentos
 export function Testimonials() {
   return (
-    <section id="testimonials" className="w-full py-16 md:py-24 bg-white">
+    <section id="testimonials" className="w-full py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -41,21 +41,21 @@ export function Testimonials() {
           {testimonials.map((testimonial) => {
             const image = PlaceHolderImages.find((img) => img.id === testimonial.id);
             return (
-              <Card key={testimonial.id} className="bg-card flex flex-col">
+              <Card key={testimonial.id} className="bg-card flex flex-col shadow-lg border-border">
                 <CardContent className="flex-grow p-6">
                   <blockquote className="text-lg text-foreground">
                     "{testimonial.quote}"
                   </blockquote>
                 </CardContent>
-                <CardFooter className="flex items-center gap-4 p-6 pt-4">
+                <CardFooter className="flex items-center gap-4 p-6 pt-4 bg-secondary/50 rounded-b-lg">
                   {image && (
-                    <Avatar>
+                    <Avatar className="border-2 border-accent">
                       <AvatarImage src={image.imageUrl} alt={testimonial.name} data-ai-hint={image.imageHint} />
                       <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                     </Avatar>
                   )}
                   <div>
-                    <p className="font-semibold text-foreground">{testimonial.name}</p>
+                    <p className="font-semibold text-primary">{testimonial.name}</p>
                     <p className="text-sm text-muted-foreground">{testimonial.role}</p>
                   </div>
                 </CardFooter>
