@@ -8,7 +8,7 @@ export function Hero() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-mockup');
 
   return (
-    <section id="hero" className="relative w-full h-[70vh] min-h-[500px] md:h-screen flex items-center justify-center text-white pt-20">
+    <section id="hero" className="relative w-full h-[70vh] min-h-[500px] md:h-[calc(100vh-80px)] flex items-center justify-center text-white pt-20">
       {heroImage && (
         <Image
           src={heroImage.imageUrl}
@@ -30,7 +30,7 @@ export function Hero() {
           </p>
           <div className="flex justify-center">
             <Button asChild size="lg" className="text-lg rounded-full font-bold bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg animate-pulse">
-              <Link href="#final-cta">Quero o Kit Completo Agora!</Link>
+              <Link href="#final-cta">Quero adquirir agora!</Link>
             </Button>
           </div>
         </div>
