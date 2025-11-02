@@ -11,7 +11,7 @@ export function Footer() {
             <div className="flex flex-col items-center md:items-start gap-2">
                 <Logo />
                 <p className="text-sm text-muted-foreground">
-                    &copy; {new Date().getFullYear()} Coleção Cristã Kids. Todos os direitos reservados.
+                    &copy; {new Date().getFullYear()} Crescendo com Cristo. Todos os direitos reservados.
                 </p>
             </div>
             <div className="flex gap-4 text-sm">

@@ -74,11 +74,11 @@ function FeatureCard({ icon: Icon, title, description, imageId }: FeatureCardPro
 // Componente da seção de características do produto
 export function ProductFeatures() {
   return (
-    <section id="features" className="w-full py-16 md:py-24 bg-background">
+    <section id="features" className="w-full py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-            📚 O que está incluso na Coleção Cristã Infantil
+            📚 O que está incluso na Coleção "Crescendo com Cristo"
           </h2>
           <p className="max-w-3xl text-muted-foreground md:text-xl">
             Um kit completo para nutrir a fé das crianças com alegria e propósito.

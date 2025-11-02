@@ -30,7 +30,7 @@ export function FinalCTA() {
                     🌟 Ensinar valores cristãos nunca foi tão fácil, bonito e inspirador!
                 </h2>
                 <p className="max-w-3xl mx-auto text-muted-foreground md:text-xl">
-                    Com a Coleção Cristã Infantil, você oferece às crianças um aprendizado divertido, colorido e cheio de amor a Deus — tudo isso em um único pacote digital completo.
+                    Com a Coleção "Crescendo com Cristo", você oferece às crianças um aprendizado divertido, colorido e cheio de amor a Deus — tudo isso em um único pacote digital completo.
                 </p>
             </div>
 
@@ -77,24 +77,24 @@ export function FinalCTA() {
 
             <div className="mt-16 text-center space-y-6">
                  <p className="font-headline text-xl font-bold text-primary">
-                    ✝️ Leve Agora a Coleção Cristã Infantil Completa <br/> e receba <span className="text-accent">TODOS os bônus exclusivos</span> + acesso imediato ao conteúdo!
+                    ✝️ Leve Agora a Coleção "Crescendo com Cristo" Completa <br/> e receba <span className="text-accent">TODOS os bônus exclusivos</span> + acesso imediato ao conteúdo!
                 </p>
 
                 <Button asChild size="lg" className="w-full md:w-auto text-2xl py-8 shadow-lg bg-accent text-accent-foreground hover:bg-accent/90 rounded-full font-bold">
                     <Link href="#">👉 Quero Ensinar com Amor!</Link>
                 </Button>
 
-                <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-base text-muted-foreground w-full max-w-2xl mx-auto">
                     <div className="flex items-center gap-2">
-                        <Lock className="h-4 w-4" />
+                        <Lock className="h-5 w-5" />
                         <span>Pagamento 100% seguro</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <Smartphone className="h-4 w-4" />
+                        <Smartphone className="h-5 w-5" />
                         <span>Entrega imediata</span>
                     </div>
                     <div className="flex items-center gap-2">
-                        <BadgeCheck className="h-4 w-4" />
+                        <BadgeCheck className="h-5 w-5" />
                         <span>Garantia de satisfação</span>
                     </div>
                 </div>
