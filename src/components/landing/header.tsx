@@ -46,9 +46,6 @@ export function Header() {
           </p>
           <CountdownTimer />
         </div>
-        <Button asChild>
-          <Link href="#final-cta">Quero o Kit Completo!</Link>
-        </Button>
       </div>
       <div className={cn("md:hidden py-2 text-center text-sm transition-colors duration-300 flex flex-col items-center", isScrolled ? "bg-secondary/80" : "bg-transparent")}>
         <p className="font-bold text-primary tracking-wider">
