@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { CountdownTimer } from '@/components/countdown-timer';
-import { Logo } from '@/components/logo';
 import { cn } from '@/lib/utils';
+import { Sparkles } from 'lucide-react';
 
 // Início do Cabeçalho
 export function Header() {
@@ -36,8 +36,11 @@ export function Header() {
       )}
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
-        <Link href="/">
-          <Logo />
+        <Link href="/" className="flex items-center gap-2">
+          <Sparkles className="h-8 w-8 text-primary" />
+          <span className="font-headline text-xl font-bold text-foreground">
+            Crescendo com Cristo
+          </span>
           <span className="sr-only">Crescendo com Cristo Home</span>
         </Link>
         <div className="hidden md:flex flex-col items-center text-sm text-center">

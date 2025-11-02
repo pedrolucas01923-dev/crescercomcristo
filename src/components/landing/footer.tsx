@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import { Facebook, Instagram, Twitter } from 'lucide-react';
-import { Logo } from '@/components/logo';
+import { Facebook, Instagram, Twitter, Sparkles } from 'lucide-react';
 
 // Componente do rodapé
 export function Footer() {
@@ -9,7 +8,12 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-6 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex flex-col items-center md:items-start gap-2">
-                <Logo />
+                <div className="flex items-center gap-2">
+                  <Sparkles className="h-8 w-8 text-primary" />
+                  <span className="font-headline text-xl font-bold text-foreground">
+                    Crescendo com Cristo
+                  </span>
+                </div>
                 <p className="text-sm text-muted-foreground">
                     &copy; {new Date().getFullYear()} Crescendo com Cristo. Todos os direitos reservados.
                 </p>
