@@ -1,11 +1,12 @@
 // Importação dos componentes da página
 import { Header } from '@/components/landing/header';
 import { Hero } from '@/components/landing/hero';
-import { Usp } from '@/components/landing/usp';
+import { PainPoints } from '@/components/landing/pain-points';
 import { ProductFeatures } from '@/components/landing/product-features';
-import { Advantages } from '@/components/landing/advantages';
+import { EmotionalBenefits } from '@/components/landing/emotional-benefits';
+import { Purpose } from '@/components/landing/purpose';
 import { Bonuses } from '@/components/landing/bonuses';
-import { Testimonials } from '@/components/landing/testimonials';
+import { Faq } from '@/components/landing/faq';
 import { FinalCTA } from '@/components/landing/final-cta';
 import { Footer } from '@/components/landing/footer';
 import { ScrollRevealSection } from '@/components/scroll-reveal-section';
@@ -13,7 +14,7 @@ import { ScrollRevealSection } from '@/components/scroll-reveal-section';
 // Componente principal da página Home
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-background">
+    <div className="flex flex-col min-h-screen bg-background font-body">
       {/* Início do Cabeçalho */}
       <Header />
       {/* Fim do Cabeçalho */}
@@ -24,35 +25,41 @@ export default function Home() {
         <Hero />
         {/* Fim da Seção Hero */}
 
-        {/* Início da Seção de Proposta de Valor Única (USP) */}
+        {/* Início da Seção de Dor / Identificação */}
         <ScrollRevealSection>
-          <Usp />
+          <PainPoints />
         </ScrollRevealSection>
-        {/* Fim da Seção de Proposta de Valor Única (USP) */}
+        {/* Fim da Seção de Dor / Identificação */}
 
-        {/* Início da Seção de Características do Produto */}
+        {/* Início da Seção de Apresentação do Produto */}
         <ScrollRevealSection>
           <ProductFeatures />
         </ScrollRevealSection>
-        {/* Fim da Seção de Características do Produto */}
-
-        {/* Início da Seção de Vantagens */}
+        {/* Fim da Seção de Apresentação do Produto */}
+        
+        {/* Início do Bloco Emocional (Conexão Familiar) */}
         <ScrollRevealSection>
-          <Advantages />
+          <EmotionalBenefits />
         </ScrollRevealSection>
-        {/* Fim da Seção de Vantagens */}
+        {/* Fim do Bloco Emocional (Conexão Familiar) */}
+
+        {/* Início da Seção de Transformação / Propósito */}
+        <ScrollRevealSection>
+          <Purpose />
+        </ScrollRevealSection>
+        {/* Fim da Seção de Transformação / Propósito */}
 
         {/* Início da Seção de Bônus */}
         <ScrollRevealSection>
           <Bonuses />
         </ScrollRevealSection>
         {/* Fim da Seção de Bônus */}
-
-        {/* Início da Seção de Depoimentos */}
+        
+        {/* Início da Seção de Perguntas Frequentes (FAQ) */}
         <ScrollRevealSection>
-          <Testimonials />
+          <Faq />
         </ScrollRevealSection>
-        {/* Fim da Seção de Depoimentos */}
+        {/* Fim da Seção de Perguntas Frequentes (FAQ) */}
 
         {/* Início da Seção de Chamada Final para Ação (CTA) */}
         <ScrollRevealSection>

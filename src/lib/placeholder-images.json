@@ -43,46 +43,28 @@
       "imageHint": "stone tablets"
     },
     {
-      "id": "testimonial-1",
-      "description": "Portrait of a happy catechist.",
-      "imageUrl": "https://images.unsplash.com/photo-1542596594-649edbc13630?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aGFwcHklMjB3b21hbnxlbnwwfHx8fDE3NjIwODEyMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "happy woman"
-    },
-    {
-      "id": "testimonial-2",
-      "description": "Portrait of a happy father and teacher.",
-      "imageUrl": "https://images.unsplash.com/photo-1659714962352-434900f95a91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoYXBweSUyMG1hbnxlbnwwfHx8fDE3NjIwMDk0Njd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "happy man"
-    },
-    {
-      "id": "testimonial-3",
-      "description": "Portrait of a happy mother with her child.",
-      "imageUrl": "https://images.unsplash.com/photo-1658928785630-78f3cda48e58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtb3RoZXIlMjBjaGlsZHxlbnwwfHx8fDE3NjIwNDQ3NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "mother child"
-    },
-    {
-      "id": "testimonial-4",
-      "description": "Portrait of a happy father.",
-      "imageUrl": "https://images.unsplash.com/photo-1624046768705-8603f683231c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoYXBweSUyMGZhdGhlcnxlbnwwfHx8fDE3NjIxMTQwNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "happy father"
-    },
-    {
-      "id": "testimonial-5",
-      "description": "Portrait of a happy sunday school teacher.",
-      "imageUrl": "https://images.unsplash.com/photo-1489278353717-f64c6ee8a4d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxoYXBweSUyMHRlYWNoZXJ8ZW58MHx8fHwxNzYyMDUxMDU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "happy teacher"
-    },
-    {
-      "id": "testimonial-6",
-      "description": "Portrait of a happy educator.",
-      "imageUrl": "https://images.unsplash.com/photo-1573496773905-f5b17e76b254?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoYXBweSUyMGVkdWNhdG9yfGVufDB8fHx8MTc2MjExMjQzNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "happy educator"
-    },
-    {
       "id": "final-cta-mockup",
       "description": "Mockup of ebooks for the final CTA section",
       "imageUrl": "https://images.unsplash.com/photo-1603703479763-01d0ce416b56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlYm9va3MlMjBjb2xsZWN0aW9ufGVufDB8fHx8MTc2MjExMjQzNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ebooks collection"
+    },
+    {
+      "id": "benefit-quality-time",
+      "description": "Family reading together, no screens visible.",
+      "imageUrl": "https://images.unsplash.com/photo-1714646793149-189cc073b387?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmYW1pbHklMjByZWFkaW5nfGVufDB8fHx8MTc2MjExOTA2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "family reading"
+    },
+    {
+      "id": "benefit-seed-faith",
+      "description": "Child praying peacefully.",
+      "imageUrl": "https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaGlsZCUyMHByYXlpbmd8ZW58MHx8fHwxNzYyMDQ2MDQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "child praying"
+    },
+    {
+      "id": "benefit-memory",
+      "description": "A happy family moment, laughing together.",
+      "imageUrl": "https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoYXBweSUyMGZhbWlseXxlbnwwfHx8fDE3NjIwMTkzNjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy family"
     }
   ]
 }
