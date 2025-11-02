@@ -4,6 +4,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { BookOpen, Palette, BookHeart, BookMarked } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
+// Definição das características do produto
 const features = [
   {
     id: 'product-comics',
@@ -31,6 +32,7 @@ const features = [
   },
 ];
 
+// Propriedades do componente de cartão de característica
 interface FeatureCardProps {
   icon: LucideIcon;
   title: string;
@@ -38,11 +40,12 @@ interface FeatureCardProps {
   imageId: string;
 }
 
+// Componente para renderizar um cartão de característica
 function FeatureCard({ icon: Icon, title, description, imageId }: FeatureCardProps) {
   const image = PlaceHolderImages.find((img) => img.id === imageId);
 
   return (
-    <Card className="flex flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+    <Card className="flex flex-col overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl bg-card">
       <CardHeader className="flex flex-row items-center gap-4 space-y-0 pb-4">
         <div className="bg-secondary p-3 rounded-full">
           <Icon className="h-6 w-6 text-secondary-foreground" />
@@ -68,9 +71,10 @@ function FeatureCard({ icon: Icon, title, description, imageId }: FeatureCardPro
   );
 }
 
+// Componente da seção de características do produto
 export function ProductFeatures() {
   return (
-    <section id="features" className="w-full py-16 md:py-24 bg-secondary/50">
+    <section id="features" className="w-full py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">

@@ -7,7 +7,7 @@ export function Hero() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-mockup');
 
   return (
-    <section id="hero" className="w-full pt-32 pb-16 md:pt-48 md:pb-24">
+    <section id="hero" className="w-full pt-32 pb-16 md:pt-48 md:pb-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-8 md:grid-cols-2 md:items-center">
           <div className="space-y-6 text-center md:text-left">

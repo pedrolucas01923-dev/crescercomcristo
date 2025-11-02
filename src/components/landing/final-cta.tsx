@@ -4,11 +4,12 @@ import { Button } from '@/components/ui/button';
 import { CalendarCheck, FileText, BadgeCheck, DownloadCloud, Zap } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
+// Componente da seção de Chamada Final para Ação (CTA)
 export function FinalCTA() {
     const finalCtaImage = PlaceHolderImages.find((img) => img.id === 'final-cta-mockup');
 
   return (
-    <section id="final-cta" className="w-full py-16 md:py-24 bg-secondary">
+    <section id="final-cta" className="w-full py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="bg-card rounded-2xl shadow-2xl p-8 md:p-12 overflow-hidden">
             <div className="grid gap-8 md:grid-cols-2 md:items-center">

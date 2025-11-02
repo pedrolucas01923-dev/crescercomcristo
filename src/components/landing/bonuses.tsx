@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
+// Lista de bônus oferecidos
 const bonuses = [
   {
     id: 'bonus-dates',
@@ -19,9 +20,10 @@ const bonuses = [
   },
 ];
 
+// Componente da seção de bônus
 export function Bonuses() {
   return (
-    <section id="bonuses" className="w-full py-16 md:py-24 bg-secondary/50">
+    <section id="bonuses" className="w-full py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground font-medium">Bônus</div>
@@ -36,7 +38,7 @@ export function Bonuses() {
           {bonuses.map((bonus) => {
             const image = PlaceHolderImages.find((img) => img.id === bonus.id);
             return (
-              <Card key={bonus.id} className="overflow-hidden shadow-lg">
+              <Card key={bonus.id} className="overflow-hidden shadow-lg bg-card">
                 {image && (
                   <Image
                     src={image.imageUrl}
