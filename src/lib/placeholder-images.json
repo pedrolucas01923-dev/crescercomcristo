@@ -1,3 +1,70 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-mockup",
+      "description": "Mockup of several colorful children's ebooks.",
+      "imageUrl": "https://images.unsplash.com/photo-1733811210700-1976e924074f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxlYm9va3MlMjBtb2NrdXB8ZW58MHx8fHwxNzYyMTEyNDM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ebooks mockup"
+    },
+    {
+      "id": "product-comics",
+      "description": "Thumbnail of a Christian comic book for kids.",
+      "imageUrl": "https://images.unsplash.com/photo-1650976295581-e4aaa0833d8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxraWRzJTIwY29taWN8ZW58MHx8fHwxNzYyMTEyNDM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kids comic"
+    },
+    {
+      "id": "product-bible-books",
+      "description": "Thumbnail of a children's bible book.",
+      "imageUrl": "https://images.unsplash.com/photo-1638722843486-232c74164f6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaGlsZHJlbnMlMjBiaWJsZXxlbnwwfHx8fDE3NjIxMTI0MzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "childrens bible"
+    },
+    {
+      "id": "product-testaments",
+      "description": "Thumbnail of an illustrated book about the Old and New Testaments.",
+      "imageUrl": "https://images.unsplash.com/photo-1680177681432-5588c066f86f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxpbGx1c3RyYXRlZCUyMGJpYmxlfGVufDB8fHx8MTc2MjExMjQzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "illustrated bible"
+    },
+    {
+      "id": "product-coloring",
+      "description": "Thumbnail of a Christian-themed coloring book for children.",
+      "imageUrl": "https://images.unsplash.com/photo-1731624637617-4f06a6414e7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb2xvcmluZyUyMGJvb2t8ZW58MHx8fHwxNzYxOTk2MjI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coloring book"
+    },
+    {
+      "id": "bonus-dates",
+      "description": "Image for the Christian commemorative dates bonus guide.",
+      "imageUrl": "https://images.unsplash.com/photo-1686563520343-4827d8ad3ede?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxraWRzJTIwY2FsZW5kYXJ8ZW58MHx8fHwxNzYyMTEyNDM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kids calendar"
+    },
+    {
+      "id": "bonus-commandments",
+      "description": "Image for the printable 10 commandments bonus.",
+      "imageUrl": "https://images.unsplash.com/photo-1673450021553-fdfce17de0e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdG9uZSUyMHRhYmxldHN8ZW58MHx8fHwxNzYyMTEyNDM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stone tablets"
+    },
+    {
+      "id": "testimonial-1",
+      "description": "Portrait of a happy catechist.",
+      "imageUrl": "https://images.unsplash.com/photo-1542596594-649edbc13630?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8aGFwcHklMjB3b21hbnxlbnwwfHx8fDE3NjIwODEyMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy woman"
+    },
+    {
+      "id": "testimonial-2",
+      "description": "Portrait of a happy father and teacher.",
+      "imageUrl": "https://images.unsplash.com/photo-1659714962352-434900f95a91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxoYXBweSUyMG1hbnxlbnwwfHx8fDE3NjIwMDk0Njd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy man"
+    },
+    {
+      "id": "testimonial-3",
+      "description": "Portrait of a happy mother with her child.",
+      "imageUrl": "https://images.unsplash.com/photo-1658928785630-78f3cda48e58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtb3RoZXIlMjBjaGlsZHxlbnwwfHx8fDE3NjIwNDQ3NDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mother child"
+    },
+    {
+      "id": "final-cta-mockup",
+      "description": "Mockup of ebooks for the final CTA section",
+      "imageUrl": "https://images.unsplash.com/photo-1603703479763-01d0ce416b56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlYm9va3MlMjBjb2xsZWN0aW9ufGVufDB8fHx8MTc2MjExMjQzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ebooks collection"
+    }
+  ]
 }
