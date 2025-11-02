@@ -4,7 +4,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Star, Users } from 'lucide-react';
+import { Star, ShieldCheck } from 'lucide-react';
 
 // Lista de depoimentos
 const testimonials = [
@@ -55,7 +55,7 @@ const testimonials = [
 // Componente da seção de depoimentos
 export function Testimonials() {
   return (
-    <section id="testimonials" className="w-full py-16 md:py-24 bg-white">
+    <section id="testimonials" className="w-full py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-foreground">
@@ -77,7 +77,7 @@ export function Testimonials() {
                         <Star key={i} className="h-5 w-5 text-accent fill-accent" />
                       ))}
                     </div>
-                    <span className="font-bold text-sm text-muted-foreground">({testimonial.rating}/5)</span>
+                    <span className="font-bold text-sm text-muted-foreground">({testimonial.rating}.0/5.0)</span>
                   </div>
                   <blockquote className="text-lg text-foreground italic">
                     "{testimonial.quote}"
@@ -100,11 +100,26 @@ export function Testimonials() {
           })}
         </div>
         <div className="mt-16 text-center">
-            <div className="inline-flex items-center justify-center gap-4 rounded-full bg-secondary px-8 py-4 shadow-md">
-                <Users className="h-8 w-8 text-primary" />
-                <p className="text-xl font-bold text-foreground">
-                    Junte-se a mais de <span className="text-primary">1.000 pais e educadores</span> que já aprovaram!
-                </p>
+            <div className="inline-flex flex-col md:flex-row items-center justify-center gap-6 rounded-2xl bg-secondary p-6 shadow-lg">
+                <div className="flex flex-col items-center">
+                    <span className="font-headline text-4xl font-bold text-primary">5.0</span>
+                    <div className="flex text-accent">
+                        <Star className="h-5 w-5 fill-current" />
+                        <Star className="h-5 w-5 fill-current" />
+                        <Star className="h-5 w-5 fill-current" />
+                        <Star className="h-5 w-5 fill-current" />
+                        <Star className="h-5 w-5 fill-current" />
+                    </div>
+                    <p className="text-sm text-muted-foreground mt-1">Média de +1.000 avaliações</p>
+                </div>
+                <div className="h-12 w-px bg-border hidden md:block"></div>
+                <div className="flex items-center gap-3">
+                    <ShieldCheck className="h-10 w-10 text-primary" />
+                    <div>
+                        <p className="font-bold text-foreground text-lg">Compra Segura e Aprovada</p>
+                        <p className="text-sm text-muted-foreground">Junte-se a milhares de clientes satisfeitos</p>
+                    </div>
+                </div>
             </div>
         </div>
       </div>
