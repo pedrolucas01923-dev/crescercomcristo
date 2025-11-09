@@ -110,7 +110,7 @@ export function FinalCTA() {
                                 className="w-full md:w-auto text-xl md:text-2xl py-6 md:py-8 shadow-lg bg-accent text-accent-foreground hover:bg-accent/90 rounded-full font-bold animate-pulse"
                                 onClick={() => setIsModalOpen(true)}
                             >
-                                👉 Quero Ensinar com Amor!
+                                Quero Ensinar!
                             </Button>
 
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-2 md:gap-4 text-xs md:text-base text-muted-foreground w-full max-w-lg mx-auto">
