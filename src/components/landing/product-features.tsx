@@ -1,13 +1,29 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { CheckCircle2 } from 'lucide-react';
+import { BookOpen, Palette, BookCopy, Smile, HeartHandshake } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
-const benefits = [
-  "Quadrinhos com histórias bíblicas cativantes",
-  "Livros da Bíblia adaptados para crianças",
-  "Livros para colorir com temas cristãos",
-  "Antigo e Novo Testamento em linguagem acessível",
-  "Ensina sobre fé, bondade, amor, perdão e gratidão",
+const features = [
+  {
+    icon: BookOpen,
+    title: "Histórias Bíblicas Cativantes",
+    description: "Quadrinhos e narrativas que prendem a atenção e ensinam com clareza.",
+  },
+  {
+    icon: Palette,
+    title: "Livros para Colorir",
+    description: "Atividades criativas que reforçam os ensinamentos de forma lúdica.",
+  },
+  {
+    icon: BookCopy,
+    title: "Testamentos Adaptados",
+    description: "Antigo e Novo Testamento em linguagem acessível para os pequenos.",
+  },
+  {
+    icon: HeartHandshake,
+    title: "Valores Fundamentais",
+    description: "Ensina sobre fé, bondade, amor, perdão e gratidão de forma prática.",
+  },
 ];
 
 const productImages = [
@@ -16,6 +32,7 @@ const productImages = [
   'product-testaments',
   'product-coloring',
 ];
+
 
 export function ProductFeatures() {
   return (
@@ -30,7 +47,7 @@ export function ProductFeatures() {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="grid grid-cols-2 gap-4">
                 {productImages.map(id => {
                     const image = PlaceHolderImages.find(img => img.id === id);
@@ -49,16 +66,32 @@ export function ProductFeatures() {
                     );
                 })}
             </div>
-            <div className="space-y-4">
-                <ul className="space-y-3">
-                    {benefits.map((benefit, index) => (
-                        <li key={index} className="flex items-start gap-3">
-                            <CheckCircle2 className="h-6 w-6 text-green-500 mt-1 flex-shrink-0" />
-                            <span className="text-lg text-muted-foreground">{benefit}</span>
-                        </li>
-                    ))}
-                </ul>
+            <div className="flex flex-col items-center text-center p-6 bg-secondary/20 rounded-xl shadow-inner border-t-4 border-accent">
+                <Smile className="h-12 w-12 text-primary mb-4" />
+                <h3 className="font-headline text-2xl font-bold text-foreground mb-2">Tudo em um só lugar!</h3>
+                <p className="text-muted-foreground">
+                    Um pacote digital com tudo que você precisa para uma educação cristã completa e divertida, sempre à mão.
+                </p>
             </div>
+        </div>
+
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {features.map((feature) => {
+            const Icon = feature.icon;
+            return (
+              <Card key={feature.title} className="text-center p-4 bg-card shadow-lg hover:shadow-primary/20 transition-shadow duration-300 border-b-4 border-primary/20 hover:border-primary">
+                <CardHeader className="flex flex-col items-center">
+                  <div className="mb-4 rounded-full bg-primary/10 p-4 text-primary">
+                    <Icon className="h-8 w-8" />
+                  </div>
+                  <CardTitle className="font-headline text-xl text-foreground">{feature.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{feature.description}</p>
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>
