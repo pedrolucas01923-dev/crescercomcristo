@@ -38,7 +38,7 @@ export function Bonuses() {
           {bonuses.map((bonus) => {
             const image = PlaceHolderImages.find((img) => img.id === bonus.id);
             return (
-              <Card key={bonus.id} className="overflow-hidden shadow-lg bg-card border-2 border-accent/50 transition-all hover:border-accent hover:shadow-2xl">
+              <Card key={bonus.id} className="overflow-hidden shadow-lg bg-card border-2 border-primary/20 transition-all hover:border-primary hover:shadow-primary/20 hover:shadow-2xl">
                 {image && (
                   <Image
                     src={image.imageUrl}

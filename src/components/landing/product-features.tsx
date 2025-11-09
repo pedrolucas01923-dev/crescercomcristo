@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { BookOpen, Palette, BookCopy, Smile, HeartHandshake } from 'lucide-react';
+import { BookOpen, Palette, BookCopy, HeartHandshake } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const features = [
@@ -72,7 +72,7 @@ export function ProductFeatures() {
           {features.map((feature) => {
             const Icon = feature.icon;
             return (
-              <Card key={feature.title} className="text-center p-4 bg-card shadow-lg hover:shadow-primary/20 transition-shadow duration-300 border-b-4 border-primary/20 hover:border-primary">
+              <Card key={feature.title} className="text-center p-4 bg-card shadow-lg border-2 border-primary/20 transition-all hover:border-primary hover:shadow-primary/20">
                 <CardHeader className="flex flex-col items-center">
                   <div className="mb-4 rounded-full bg-primary/10 p-4 text-primary">
                     <Icon className="h-8 w-8" />

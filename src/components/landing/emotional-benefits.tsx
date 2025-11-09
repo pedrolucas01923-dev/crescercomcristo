@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const benefits = [
@@ -33,7 +33,7 @@ export function EmotionalBenefits() {
           {benefits.map((benefit) => {
             const image = PlaceHolderImages.find((img) => img.id === benefit.id);
             return (
-              <Card key={benefit.id} className="overflow-hidden shadow-lg bg-card text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+              <Card key={benefit.id} className="overflow-hidden shadow-lg bg-card text-center border-2 border-primary/20 transition-all duration-300 hover:scale-105 hover:shadow-primary/20 hover:border-primary">
                 {image && (
                   <div className="aspect-w-4 aspect-h-3">
                     <Image
