@@ -130,7 +130,7 @@ export function FinalCTA() {
 
                             <div className="mt-6 bg-primary/10 rounded-full px-4 py-3 inline-flex items-center gap-3 text-primary font-bold text-sm md:text-base">
                                 <Zap className="h-5 w-5" />
-                                <span>Oferta se encerrando em: <CountdownTimer /></span>
+                                <span>OFERTA EXCLUSIVA APENAS HOJE</span>
                             </div>
                         </div>
 
