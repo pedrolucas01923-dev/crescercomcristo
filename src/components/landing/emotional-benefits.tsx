@@ -51,19 +51,18 @@ export function EmotionalBenefits() {
             return (
               <Card key={benefit.id} className="overflow-hidden shadow-lg bg-card text-center border-2 border-primary/20 transition-all duration-300 hover:scale-105 hover:shadow-primary/20 hover:border-primary">
                 {image && (
-                  <div className="aspect-w-4 aspect-h-3">
-                    <Image
-                      src={image.imageUrl}
-                      alt={benefit.title}
-                      width={400}
-                      height={300}
-                      className="w-full h-full object-cover"
-                      data-ai-hint={image.imageHint}
-                    />
-                  </div>
+                    <div className="relative w-full" style={{paddingBottom: '125%'}}>
+                        <Image
+                          src={image.imageUrl}
+                          alt={benefit.title}
+                          layout="fill"
+                          className="object-cover"
+                          data-ai-hint={image.imageHint}
+                        />
+                    </div>
                 )}
-                <CardHeader>
-                  <CardTitle className="font-headline text-xl text-foreground">{benefit.title}</CardTitle>
+                <CardHeader className="p-4">
+                  <CardTitle className="font-headline text-base text-foreground">{benefit.title}</CardTitle>
                 </CardHeader>
               </Card>
             );
