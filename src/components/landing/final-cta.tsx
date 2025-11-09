@@ -52,7 +52,7 @@ export function FinalCTA() {
         <>
             <section id="final-cta" className="w-full py-16 md:py-24 bg-background">
                 <div className="container mx-auto px-4 md:px-6">
-                    <div className="bg-secondary/30 rounded-2xl shadow-2xl p-8 md:p-12 overflow-hidden relative">
+                    <div className="bg-secondary/30 rounded-2xl shadow-2xl p-6 md:p-12 overflow-hidden relative">
                         <div className="absolute top-0 left-0 -translate-x-1/4 -translate-y-1/4 text-primary/5 opacity-50">
                             <Star className="h-32 w-32" />
                         </div>
@@ -60,10 +60,10 @@ export function FinalCTA() {
                             <Heart className="h-40 w-40" />
                         </div>
                         <div className="text-center space-y-4 mb-12 relative z-10">
-                            <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
+                            <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl text-primary">
                                 🌟 Ensinar valores cristãos nunca foi tão fácil, bonito e inspirador!
                             </h2>
-                            <p className="max-w-3xl mx-auto text-muted-foreground md:text-xl">
+                            <p className="max-w-3xl mx-auto text-muted-foreground md:text-xl text-base">
                                 Com a Coleção Cristã Infantil, você oferece às crianças um aprendizado divertido, colorido e cheio de amor a Deus — tudo isso em um único pacote digital completo.
                             </p>
                         </div>
@@ -76,7 +76,7 @@ export function FinalCTA() {
                                         alt="Coleção Cristã Infantil Mockup"
                                         width={500}
                                         height={400}
-                                        className="rounded-lg shadow-2xl"
+                                        className="rounded-lg shadow-2xl w-full max-w-sm md:max-w-md"
                                         data-ai-hint={ctaImage.imageHint}
                                     />
                                 )}
@@ -90,8 +90,8 @@ export function FinalCTA() {
                                                 <Icon className="h-6 w-6 text-accent" />
                                             </div>
                                             <div>
-                                                <h3 className="font-bold text-lg text-foreground">{benefit.title}</h3>
-                                                <p className="text-muted-foreground">{benefit.description}</p>
+                                                <h3 className="font-bold text-base md:text-lg text-foreground">{benefit.title}</h3>
+                                                <p className="text-sm md:text-base text-muted-foreground">{benefit.description}</p>
                                             </div>
                                         </div>
                                     );
@@ -99,36 +99,36 @@ export function FinalCTA() {
                             </div>
                         </div>
 
-                        <div className="mt-12 text-center space-y-6 bg-white/60 p-8 rounded-xl shadow-inner">
-                            <h3 className="font-headline text-2xl font-bold text-primary">
+                        <div className="mt-12 text-center space-y-6 bg-white/60 p-6 md:p-8 rounded-xl shadow-inner">
+                            <h3 className="font-headline text-xl md:text-2xl font-bold text-primary">
                                 ✝️ Leve Agora a Coleção Cristã Infantil Completa
                             </h3>
-                            <p className="text-muted-foreground">e receba TODOS os bônus exclusivos + acesso imediato ao conteúdo!</p>
+                            <p className="text-muted-foreground text-sm md:text-base">e receba TODOS os bônus exclusivos + acesso imediato ao conteúdo!</p>
                             
                             <Button 
                                 size="lg" 
-                                className="w-full md:w-auto text-2xl py-8 shadow-lg bg-accent text-accent-foreground hover:bg-accent/90 rounded-full font-bold animate-pulse"
+                                className="w-full md:w-auto text-xl md:text-2xl py-6 md:py-8 shadow-lg bg-accent text-accent-foreground hover:bg-accent/90 rounded-full font-bold animate-pulse"
                                 onClick={() => setIsModalOpen(true)}
                             >
                                 👉 Quero Ensinar com Amor!
                             </Button>
 
-                            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-base text-muted-foreground w-full max-w-lg mx-auto">
+                            <div className="flex flex-col sm:flex-row items-center justify-center gap-2 md:gap-4 text-xs md:text-base text-muted-foreground w-full max-w-lg mx-auto">
                                 <div className="flex items-center gap-2">
-                                    <Lock className="h-5 w-5" />
+                                    <Lock className="h-4 w-4 md:h-5 md:w-5" />
                                     <span>Pagamento 100% seguro</span>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    <Smartphone className="h-5 w-5" />
+                                    <Smartphone className="h-4 w-4 md:h-5 md:w-5" />
                                     <span>Entrega imediata</span>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    <BadgeCheck className="h-5 w-5" />
+                                    <BadgeCheck className="h-4 w-4 md:h-5 md:w-5" />
                                     <span>Garantia de satisfação</span>
                                 </div>
                             </div>
 
-                            <div className="mt-6 bg-primary/10 rounded-full px-4 py-3 inline-flex items-center gap-3 text-primary font-bold">
+                            <div className="mt-6 bg-primary/10 rounded-full px-4 py-3 inline-flex items-center gap-3 text-primary font-bold text-sm md:text-base">
                                 <Zap className="h-5 w-5" />
                                 <span>Oferta se encerrando em: <CountdownTimer /></span>
                             </div>
@@ -143,8 +143,8 @@ export function FinalCTA() {
                                             <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                                         </Avatar>
                                         <div>
-                                            <p className="italic text-muted-foreground">"{testimonial.text}"</p>
-                                            <p className="font-bold text-right mt-2 text-primary">- {testimonial.name}, <span className="font-normal text-sm">{testimonial.role}</span></p>
+                                            <p className="italic text-muted-foreground text-sm md:text-base">"{testimonial.text}"</p>
+                                            <p className="font-bold text-right mt-2 text-primary text-sm md:text-base">- {testimonial.name}, <span className="font-normal text-sm">{testimonial.role}</span></p>
                                         </div>
                                    </div>
                                ))}
@@ -152,7 +152,7 @@ export function FinalCTA() {
                         </div>
                         
                         <div className="mt-16 text-center">
-                            <p className="font-headline text-xl text-primary font-semibold">
+                            <p className="font-headline text-lg md:text-xl text-primary font-semibold">
                                 🌈 Eduque o coração e a mente das crianças na Palavra de Deus.
                                 <br />
                                 Dê esse primeiro passo hoje — o futuro da fé começa no aprendizado de agora.

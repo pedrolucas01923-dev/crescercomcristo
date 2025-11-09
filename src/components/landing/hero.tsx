@@ -8,7 +8,7 @@ export function Hero() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-mockup');
 
   return (
-    <section id="hero" className="relative w-full h-[70vh] min-h-[500px] md:h-screen flex items-center justify-center text-white">
+    <section id="hero" className="relative w-full h-[80vh] min-h-[500px] md:h-screen flex items-center justify-center text-white">
       {heroImage && (
         <Image
           src={heroImage.imageUrl}
@@ -25,11 +25,11 @@ export function Hero() {
           <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white">
             Ensine <span className="text-accent">valores cristãos</span> de forma divertida e inesquecível!
           </h1>
-          <p className="text-lg text-slate-200 md:text-xl">
+          <p className="text-base sm:text-lg text-slate-200 md:text-xl">
             Uma coleção completa de ebooks ilustrados para ensinar a fé às crianças com alegria, amor e propósito.
           </p>
           <div className="flex justify-center">
-            <Button asChild size="lg" className="text-lg rounded-full font-bold bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg animate-pulse">
+            <Button asChild size="lg" className="text-base md:text-lg rounded-full font-bold bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg animate-pulse w-full sm:w-auto">
               <Link href="#final-cta">Quero adquirir agora!</Link>
             </Button>
           </div>

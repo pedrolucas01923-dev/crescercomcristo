@@ -43,10 +43,10 @@ export function Bonuses() {
             <Gift className="inline-block h-5 w-5 mr-2" />
             Bônus Especiais
           </div>
-          <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
+          <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl text-primary">
             E para deixar o aprendizado ainda mais completo...
           </h2>
-          <p className="max-w-3xl text-muted-foreground md:text-xl">
+          <p className="max-w-3xl text-muted-foreground md:text-xl text-base">
             Comprando a coleção hoje, você leva estes presentes incríveis para enriquecer ainda mais a jornada de fé do seu filho.
           </p>
         </div>
@@ -71,11 +71,11 @@ export function Bonuses() {
                     <div className="bg-primary/10 p-2.5 rounded-full mt-1">
                         <Icon className="h-5 w-5 text-primary" />
                     </div>
-                    <CardTitle className="font-headline text-xl text-primary h-14 flex items-center">{bonus.title}</CardTitle>
+                    <CardTitle className="font-headline text-lg md:text-xl text-primary h-14 flex items-center">{bonus.title}</CardTitle>
                   </div>
                 </CardHeader>
-                <CardContent className="flex-grow pl-14">
-                  <p className="text-base text-muted-foreground text-left">{bonus.description}</p>
+                <CardContent className="flex-grow pl-14 pb-4">
+                  <p className="text-sm md:text-base text-muted-foreground text-left">{bonus.description}</p>
                 </CardContent>
               </Card>
             );

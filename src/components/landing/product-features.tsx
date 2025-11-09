@@ -39,15 +39,15 @@ export function ProductFeatures() {
     <section id="features" className="w-full py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-          <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-primary">
+          <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl text-primary">
             Apresentamos a Coleção "Crescendo com Cristo"
           </h2>
-          <p className="max-w-3xl text-muted-foreground md:text-xl">
+          <p className="max-w-3xl text-muted-foreground md:text-xl text-base">
             Uma coleção completa, prática e inspiradora para ajudar pais e educadores a apresentarem os valores cristãos às crianças de forma leve, colorida e divertida.
           </p>
         </div>
         
-        <div className="mb-16">
+        <div className="mb-12 md:mb-16">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {productImages.map(id => {
                     const image = PlaceHolderImages.find(img => img.id === id);
@@ -68,19 +68,19 @@ export function ProductFeatures() {
             </div>
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((feature) => {
             const Icon = feature.icon;
             return (
               <Card key={feature.title} className="text-center p-4 bg-card shadow-lg border-2 border-primary/20 transition-all hover:border-primary hover:shadow-primary/20">
                 <CardHeader className="flex flex-col items-center">
-                  <div className="mb-4 rounded-full bg-primary/10 p-4 text-primary">
-                    <Icon className="h-8 w-8" />
+                  <div className="mb-4 rounded-full bg-primary/10 p-3 md:p-4 text-primary">
+                    <Icon className="h-7 w-7 md:h-8 md:w-8" />
                   </div>
-                  <CardTitle className="font-headline text-xl text-foreground">{feature.title}</CardTitle>
+                  <CardTitle className="font-headline text-lg md:text-xl text-foreground">{feature.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">{feature.description}</p>
+                  <p className="text-sm md:text-base text-muted-foreground">{feature.description}</p>
                 </CardContent>
               </Card>
             );
