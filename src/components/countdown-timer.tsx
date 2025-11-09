@@ -6,7 +6,12 @@ import { useState, useEffect } from 'react';
 const SIX_HOURS_IN_SECONDS = 6 * 60 * 60;
 
 export function CountdownTimer() {
-  const [timeLeft, setTimeLeft] = useState(SIX_HOURS_IN_SECONDS);
+  const [timeLeft, setTimeLeft] = useState(0);
+
+  useEffect(() => {
+    // This effect should only run on the client
+    setTimeLeft(SIX_HOURS_IN_SECONDS);
+  }, []);
 
   useEffect(() => {
     if (timeLeft <= 0) return;
@@ -17,6 +22,14 @@ export function CountdownTimer() {
 
     return () => clearInterval(intervalId);
   }, [timeLeft]);
+
+  if (timeLeft <= 0) {
+    return (
+      <span className="font-mono font-bold text-accent animate-pulse-subtle">
+        00:00:00
+      </span>
+    );
+  }
 
   const hours = Math.floor(timeLeft / 3600);
   const minutes = Math.floor((timeLeft % 3600) / 60);
