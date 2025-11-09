@@ -94,10 +94,10 @@ export default {
         },
         'aura-pulse': {
           '0%, 100%': {
-            boxShadow: '0 0 0 0px hsl(var(--primary) / 0.4)',
+            boxShadow: '0 0 0 0px hsl(var(--primary) / 0.2)',
           },
           '50%': {
-            boxShadow: '0 0 0 10px hsl(var(--primary) / 0)',
+            boxShadow: '0 0 0 8px hsl(var(--primary) / 0)',
           },
         },
       },
@@ -105,7 +105,7 @@ export default {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'pulse-subtle': 'pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'aura-pulse': 'aura-pulse 2s infinite',
+        'aura-pulse': 'aura-pulse 2.5s infinite',
       },
     },
   },
