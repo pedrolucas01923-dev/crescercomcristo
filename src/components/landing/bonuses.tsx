@@ -1,21 +1,31 @@
-import Image from 'next/image';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Gift } from 'lucide-react';
+import { Gift, Palette, Heart, BookText } from 'lucide-react';
 
 const bonuses = [
   {
-    id: 'bonus-dates',
-    title: 'Datas Cristãs Explicadas',
-    description: 'Todas as principais comemorações cristãs explicadas de forma simples e visual para crianças (Páscoa, Natal, Pentecostes, etc.).',
-    imageHint: 'kids calendar',
+    id: 'bonus-plan',
+    icon: Gift,
+    title: 'Plano de Aplicação “15 Minutos com Jesus”',
+    description: 'Um guia simples para você usar os quadrinhos, livros e páginas para colorir de forma leve: 10 a 15 min por dia de forma prática e sem pressão.',
   },
   {
-    id: 'bonus-commandments',
-    title: 'Os 10 Mandamentos em Imagens',
-    description: 'Ilustrações prontas para imprimir e ensinar os valores de Deus de forma visual, educativa e divertida.',
-    imageHint: 'stone tablets',
+    id: 'bonus-activities',
+    icon: Palette,
+    title: 'Guia de Atividades Práticas',
+    description: 'Ideias de como usar as páginas para colorir para reforçar valores como amor, bondade, perdão e respeito.',
   },
+  {
+    id: 'bonus-devotionals',
+    icon: Heart,
+    title: '5 Roteiros de Conversas de Fé para Fazer em Família',
+    description: 'Perguntas simples para conversar com as crianças depois da leitura das histórias.',
+  },
+  {
+    id: 'bonus-verses',
+    icon: BookText,
+    title: 'Versículo da Semana para Memorizar',
+    description: 'Uma lista pronta com versículos fáceis para ensinar e reforçar valores no dia a dia.',
+  }
 ];
 
 export function Bonuses() {
@@ -36,24 +46,17 @@ export function Bonuses() {
         </div>
         <div className="mx-auto grid max-w-5xl gap-8 sm:grid-cols-2">
           {bonuses.map((bonus) => {
-            const image = PlaceHolderImages.find((img) => img.id === bonus.id);
+            const Icon = bonus.icon;
             return (
-              <Card key={bonus.id} className="overflow-hidden shadow-lg bg-card border-2 border-primary/20 transition-all hover:border-primary hover:shadow-primary/20 hover:shadow-2xl">
-                {image && (
-                  <Image
-                    src={image.imageUrl}
-                    alt={bonus.title}
-                    width={400}
-                    height={300}
-                    className="w-full h-auto object-cover"
-                    data-ai-hint={image.imageHint}
-                  />
-                )}
+              <Card key={bonus.id} className="overflow-hidden shadow-lg bg-card border-2 border-primary/20 transition-all hover:border-primary hover:shadow-primary/20 hover:shadow-2xl flex flex-col">
                 <CardHeader>
-                  <CardTitle className="font-headline text-2xl text-primary">{bonus.title}</CardTitle>
+                  <div className="flex items-center gap-4">
+                    <Icon className="h-8 w-8 text-accent" />
+                    <CardTitle className="font-headline text-2xl text-primary text-left">{bonus.title}</CardTitle>
+                  </div>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base text-muted-foreground">{bonus.description}</CardDescription>
+                <CardContent className="flex-grow">
+                  <CardDescription className="text-base text-muted-foreground text-left">{bonus.description}</CardDescription>
                 </CardContent>
               </Card>
             );
