@@ -47,8 +47,8 @@ export function ProductFeatures() {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div className="grid grid-cols-2 gap-4">
+        <div className="mb-16">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {productImages.map(id => {
                     const image = PlaceHolderImages.find(img => img.id === id);
                     if (!image) return null;
@@ -65,13 +65,6 @@ export function ProductFeatures() {
                         </div>
                     );
                 })}
-            </div>
-            <div className="flex flex-col items-center text-center p-6 bg-secondary/20 rounded-xl shadow-inner border-t-4 border-accent">
-                <Smile className="h-12 w-12 text-primary mb-4" />
-                <h3 className="font-headline text-2xl font-bold text-foreground mb-2">Tudo em um só lugar!</h3>
-                <p className="text-muted-foreground">
-                    Um pacote digital com tudo que você precisa para uma educação cristã completa e divertida, sempre à mão.
-                </p>
             </div>
         </div>
 
