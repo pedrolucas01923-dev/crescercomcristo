@@ -3,68 +3,80 @@
     {
       "id": "hero-mockup",
       "description": "Mockup of several colorful children's ebooks.",
-      "imageUrl": "https://images.unsplash.com/photo-1733811210700-1976e924074f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxlYm9va3MlMjBtb2NrdXB8ZW58MHx8fHwxNzYyMTEyNDM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1645116829834-3b52a74d2a64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlYm9va3MlMjBtb2NrdXB8ZW58MHx8fHwxNzYyNzE2MDQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ebooks mockup"
     },
     {
       "id": "product-comics",
       "description": "Thumbnail of a Christian comic book for kids.",
-      "imageUrl": "https://images.unsplash.com/photo-1650976295581-e4aaa0833d8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxraWRzJTIwY29taWN8ZW58MHx8fHwxNzYyMTEyNDM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1661294667246-2492ae1447b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxraWRzJTIwY29taWN8ZW58MHx8fHwxNzYyNzE2MDUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "kids comic"
     },
     {
       "id": "product-bible-books",
       "description": "Thumbnail of a children's bible book.",
-      "imageUrl": "https://images.unsplash.com/photo-1638722843486-232c74164f6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaGlsZHJlbnMlMjBiaWJsZXxlbnwwfHx8fDE3NjIxMTI0MzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1604146390776-b4ea28b51f98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaGlsZHJlbnMlMjBiaWJsZXxlbnwwfHx8fDE3NjI3MTYwNTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "childrens bible"
     },
     {
       "id": "product-testaments",
       "description": "Thumbnail of an illustrated book about the Old and New Testaments.",
-      "imageUrl": "https://images.unsplash.com/photo-1680177681432-5588c066f86f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxpbGx1c3RyYXRlZCUyMGJpYmxlfGVufDB8fHx8MTc2MjExMjQzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1525213386932-96f9ea565e69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxpbGx1c3RyYXRlZCUyMGJpYmxlfGVufDB8fHx8MTc2MjcxNjA1MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "illustrated bible"
     },
     {
       "id": "product-coloring",
       "description": "Thumbnail of a Christian-themed coloring book for children.",
-      "imageUrl": "https://images.unsplash.com/photo-1731624637617-4f06a6414e7d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjb2xvcmluZyUyMGJvb2t8ZW58MHx8fHwxNzYxOTk2MjI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1731624637604-eba223ee268d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb2xvcmluZyUyMGJvb2t8ZW58MHx8fHwxNzYyNzE2MDQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "coloring book"
     },
     {
-      "id": "bonus-dates",
-      "description": "Image for the Christian commemorative dates bonus guide.",
-      "imageUrl": "https://images.unsplash.com/photo-1686563520343-4827d8ad3ede?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxraWRzJTIwY2FsZW5kYXJ8ZW58MHx8fHwxNzYyMTEyNDM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "kids calendar"
+      "id": "bonus-plan",
+      "description": "Image for the daily/weekly usage plan bonus.",
+      "imageUrl": "https://images.unsplash.com/photo-1657040298726-7189d3090d5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwbGFubmVyJTIwZ3VpZGV8ZW58MHx8fHwxNzYyNzE2NzEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "planner guide"
     },
     {
-      "id": "bonus-commandments",
-      "description": "Image for the printable 10 commandments bonus.",
-      "imageUrl": "https://images.unsplash.com/photo-1673450021553-fdfce17de0e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdG9uZSUyMHRhYmxldHN8ZW58MHx8fHwxNzYyMTEyNDM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "stone tablets"
+      "id": "bonus-activities",
+      "description": "Image for the creative activities guide bonus.",
+      "imageUrl": "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxraWRzJTIwYWN0aXZpdGllc3xlbnwwfHx8fDE3NjI3MTY3MTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kids activities"
+    },
+    {
+      "id": "bonus-devotionals",
+      "description": "Image for the family devotionals bonus.",
+      "imageUrl": "https://images.unsplash.com/photo-1753164726450-33bbc963af80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmYW1pbHklMjBjb252ZXJzYXRpb258ZW58MHx8fHwxNzYyNzE2NzEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "family conversation"
+    },
+    {
+      "id": "bonus-verses",
+      "description": "Image for the weekly bible verse card bonus.",
+      "imageUrl": "https://images.unsplash.com/photo-1620048496289-82fed83ed559?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiaWJsZSUyMHZlcnNlfGVufDB8fHx8MTc2MjcxNjcxM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bible verse"
     },
     {
       "id": "final-cta-mockup",
       "description": "Mockup of ebooks for the final CTA section",
-      "imageUrl": "https://images.unsplash.com/photo-1603703479763-01d0ce416b56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlYm9va3MlMjBjb2xsZWN0aW9ufGVufDB8fHx8MTc2MjExMjQzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1695116858768-8ef0395229e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZWJvb2tzJTIwY29sbGVjdGlvbnxlbnwwfHx8fDE3NjI3MTYwNDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ebooks collection"
     },
     {
       "id": "benefit-quality-time",
       "description": "Family reading together, no screens visible.",
-      "imageUrl": "https://images.unsplash.com/photo-1714646793149-189cc073b387?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmYW1pbHklMjByZWFkaW5nfGVufDB8fHx8MTc2MjExOTA2NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "family reading"
+      "imageUrl": "https://images.unsplash.com/photo-1713942590404-d6981e63fb56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmYW1pbHklMjByZWFkaW5nJTIwbm8lMjBzY3JlZW58ZW58MHx8fHwxNzYyNzE2NzEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "family reading no screen"
     },
     {
       "id": "benefit-seed-faith",
       "description": "Child praying peacefully.",
-      "imageUrl": "https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaGlsZCUyMHByYXlpbmd8ZW58MHx8fHwxNzYyMDQ2MDQ1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1442115597578-2d0fb2413734?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaGlsZCUyMHByYXlpbmd8ZW58MHx8fHwxNzYyNjA1NTAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "child praying"
     },
     {
       "id": "benefit-memory",
       "description": "A happy family moment, laughing together.",
-      "imageUrl": "https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxoYXBweSUyMGZhbWlseXxlbnwwfHx8fDE3NjIwMTkzNjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "happy family"
+      "imageUrl": "https://images.unsplash.com/photo-1758513423681-662999098875?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxoYXBweSUyMGZhbWlseSUyMG1vbWVudHxlbnwwfHx8fDE3NjI3MTY3MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy family moment"
     }
   ]
 }

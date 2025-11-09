@@ -1,5 +1,7 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import Image from 'next/image';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Gift, Palette, Heart, BookText } from 'lucide-react';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const bonuses = [
   {
@@ -7,24 +9,28 @@ const bonuses = [
     icon: Gift,
     title: 'Plano de Aplicação “15 Minutos com Jesus”',
     description: 'Um guia simples para você usar os quadrinhos, livros e páginas para colorir de forma leve: 10 a 15 min por dia de forma prática e sem pressão.',
+    imageHint: 'planner guide',
   },
   {
     id: 'bonus-activities',
     icon: Palette,
     title: 'Guia de Atividades Práticas',
     description: 'Ideias de como usar as páginas para colorir para reforçar valores como amor, bondade, perdão e respeito.',
+    imageHint: 'kids activities',
   },
   {
     id: 'bonus-devotionals',
     icon: Heart,
     title: '5 Roteiros de Conversas de Fé para Fazer em Família',
     description: 'Perguntas simples para conversar com as crianças depois da leitura das histórias.',
+    imageHint: 'family conversation',
   },
   {
     id: 'bonus-verses',
     icon: BookText,
     title: 'Versículo da Semana para Memorizar',
     description: 'Uma lista pronta com versículos fáceis para ensinar e reforçar valores no dia a dia.',
+    imageHint: 'bible verse',
   }
 ];
 
@@ -47,16 +53,31 @@ export function Bonuses() {
         <div className="mx-auto grid max-w-5xl gap-8 sm:grid-cols-2">
           {bonuses.map((bonus) => {
             const Icon = bonus.icon;
+            const image = PlaceHolderImages.find((img) => img.id === bonus.id);
             return (
               <Card key={bonus.id} className="overflow-hidden shadow-lg bg-card border-2 border-primary/20 transition-all hover:border-primary hover:shadow-primary/20 hover:shadow-2xl flex flex-col">
+                 {image && (
+                  <div className="aspect-w-4 aspect-h-3">
+                    <Image
+                      src={image.imageUrl}
+                      alt={bonus.title}
+                      width={400}
+                      height={300}
+                      className="w-full h-full object-cover"
+                      data-ai-hint={image.imageHint}
+                    />
+                  </div>
+                )}
                 <CardHeader>
-                  <div className="flex items-center gap-4">
-                    <Icon className="h-8 w-8 text-accent" />
-                    <CardTitle className="font-headline text-2xl text-primary text-left">{bonus.title}</CardTitle>
+                  <div className="flex items-start gap-4">
+                    <div className="bg-primary/10 p-3 rounded-full">
+                        <Icon className="h-6 w-6 text-primary" />
+                    </div>
+                    <CardTitle className="font-headline text-2xl text-primary">{bonus.title}</CardTitle>
                   </div>
                 </CardHeader>
-                <CardContent className="flex-grow">
-                  <CardDescription className="text-base text-muted-foreground text-left">{bonus.description}</CardDescription>
+                <CardContent className="flex-grow pl-16">
+                  <p className="text-base text-muted-foreground text-left">{bonus.description}</p>
                 </CardContent>
               </Card>
             );
