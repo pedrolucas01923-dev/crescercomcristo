@@ -38,7 +38,7 @@ export function PainPoints() {
           })}
         </div>
         <div className="mt-12 text-center">
-            <p className="text-xl font-medium bg-primary/10 text-primary p-4 rounded-lg inline-block">
+            <p className="text-xl font-medium bg-primary/10 text-primary p-4 rounded-lg inline-block animate-aura-pulse">
                 Se você respondeu sim a alguma dessas perguntas, esta coleção foi feita especialmente para você!
             </p>
         </div>

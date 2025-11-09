@@ -91,12 +91,21 @@ export default {
         'pulse-subtle': {
           '0%, 100%': { transform: 'scale(1)' },
           '50%': { transform: 'scale(1.05)' },
-        }
+        },
+        'aura-pulse': {
+          '0%, 100%': {
+            boxShadow: '0 0 0 0px hsl(var(--primary) / 0.4)',
+          },
+          '50%': {
+            boxShadow: '0 0 0 10px hsl(var(--primary) / 0)',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'pulse-subtle': 'pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'aura-pulse': 'aura-pulse 2s infinite',
       },
     },
   },
