@@ -57,26 +57,24 @@ export function Bonuses() {
             return (
               <Card key={bonus.id} className="overflow-hidden shadow-lg bg-card border-2 border-primary/20 transition-all hover:border-primary hover:shadow-primary/20 hover:shadow-2xl flex flex-col">
                  {image && (
-                  <div className="aspect-w-4 aspect-h-3">
                     <Image
                       src={image.imageUrl}
                       alt={bonus.title}
                       width={400}
                       height={300}
-                      className="w-full h-full object-cover"
+                      className="w-full h-48 object-cover"
                       data-ai-hint={image.imageHint}
                     />
-                  </div>
                 )}
                 <CardHeader>
-                  <div className="flex items-start gap-4">
-                    <div className="bg-primary/10 p-3 rounded-full">
-                        <Icon className="h-6 w-6 text-primary" />
+                  <div className="flex items-start gap-3">
+                    <div className="bg-primary/10 p-2.5 rounded-full mt-1">
+                        <Icon className="h-5 w-5 text-primary" />
                     </div>
-                    <CardTitle className="font-headline text-2xl text-primary">{bonus.title}</CardTitle>
+                    <CardTitle className="font-headline text-xl text-primary h-14 flex items-center">{bonus.title}</CardTitle>
                   </div>
                 </CardHeader>
-                <CardContent className="flex-grow pl-16">
+                <CardContent className="flex-grow pl-14">
                   <p className="text-base text-muted-foreground text-left">{bonus.description}</p>
                 </CardContent>
               </Card>
