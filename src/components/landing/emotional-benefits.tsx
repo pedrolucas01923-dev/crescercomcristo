@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const benefits = [
   {
@@ -19,6 +20,21 @@ const benefits = [
     imageHint: 'happy family moment',
   },
 ];
+
+const testimonials = [
+    {
+        name: "Ana P.",
+        role: "Mãe de 2",
+        text: "Os livros transformaram nossas noites. Trocamos a TV por histórias cheias de amor e fé. É o nosso momento preferido do dia!",
+        avatar: "https://i.pravatar.cc/150?img=3"
+    },
+    {
+        name: "Juliana R.",
+        role: "Educadora e mãe",
+        text: "Ver os olhos do meu filho brilhando ao aprender sobre Jesus não tem preço. São memórias que vamos guardar para sempre.",
+        avatar: "https://i.pravatar.cc/150?img=4"
+    }
+]
 
 export function EmotionalBenefits() {
   return (
@@ -52,6 +68,23 @@ export function EmotionalBenefits() {
               </Card>
             );
           })}
+        </div>
+        <div className="mt-16 space-y-8">
+            <h3 className="text-center font-headline text-2xl font-bold text-primary">O que as famílias estão dizendo:</h3>
+            <div className="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
+                {testimonials.map((testimonial, index) => (
+                    <div key={index} className="bg-white p-6 rounded-lg shadow-md flex gap-4 items-start">
+                        <Avatar>
+                            <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
+                            <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                        </Avatar>
+                        <div>
+                            <p className="italic text-muted-foreground">"{testimonial.text}"</p>
+                            <p className="font-bold text-right mt-2 text-primary">- {testimonial.name}, <span className="font-normal text-sm">{testimonial.role}</span></p>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </div>
       </div>
     </section>
