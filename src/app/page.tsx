@@ -1,4 +1,6 @@
-// Importação dos componentes da página
+"use client";
+
+import { useState, useEffect, useRef } from 'react';
 import { Hero } from '@/components/landing/hero';
 import { PainPoints } from '@/components/landing/pain-points';
 import { ProductFeatures } from '@/components/landing/product-features';
@@ -11,67 +13,69 @@ import { Footer } from '@/components/landing/footer';
 import { ScrollRevealSection } from '@/components/scroll-reveal-section';
 import { Header } from '@/components/landing/header';
 
-// Componente principal da página Home
 export default function Home() {
+  const [isHeroVisible, setIsHeroVisible] = useState(true);
+  const heroRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsHeroVisible(entry.isIntersecting);
+      },
+      { threshold: 0.1 } // Considera visível se 10% estiver na tela
+    );
+
+    const currentHeroRef = heroRef.current;
+    if (currentHeroRef) {
+      observer.observe(currentHeroRef);
+    }
+
+    return () => {
+      if (currentHeroRef) {
+        observer.unobserve(currentHeroRef);
+      }
+    };
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen bg-background font-body">
-      {/* Início do Cabeçalho */}
-      <Header />
-      {/* Fim do Cabeçalho */}
+      <Header isVisible={isHeroVisible} />
       
-      {/* Conteúdo principal da página */}
       <main className="flex-grow">
-        {/* Início da Seção Hero */}
-        <Hero />
-        {/* Fim da Seção Hero */}
+        <div ref={heroRef}>
+          <Hero />
+        </div>
 
-        {/* Início da Seção de Dor / Identificação */}
         <ScrollRevealSection>
           <PainPoints />
         </ScrollRevealSection>
-        {/* Fim da Seção de Dor / Identificação */}
 
-        {/* Início da Seção de Apresentação do Produto */}
         <ScrollRevealSection>
           <ProductFeatures />
         </ScrollRevealSection>
-        {/* Fim da Seção de Apresentação do Produto */}
         
-        {/* Início do Bloco Emocional (Conexão Familiar) */}
         <ScrollRevealSection>
           <EmotionalBenefits />
         </ScrollRevealSection>
-        {/* Fim do Bloco Emocional (Conexão Familiar) */}
 
-        {/* Início da Seção de Transformação / Propósito */}
         <ScrollRevealSection>
           <Purpose />
         </ScrollRevealSection>
-        {/* Fim da Seção de Transformação / Propósito */}
 
-        {/* Início da Seção de Bônus */}
         <ScrollRevealSection>
           <Bonuses />
         </ScrollRevealSection>
-        {/* Fim da Seção de Bônus */}
         
-        {/* Início da Seção de Perguntas Frequentes (FAQ) */}
         <ScrollRevealSection>
           <Faq />
         </ScrollRevealSection>
-        {/* Fim da Seção de Perguntas Frequentes (FAQ) */}
 
-        {/* Início da Seção de Chamada Final para Ação (CTA) */}
         <ScrollRevealSection>
           <FinalCTA />
         </ScrollRevealSection>
-        {/* Fim da Seção de Chamada Final para Ação (CTA) */}
       </main>
-      {/* Fim do Conteúdo principal */}
 
-      {/* Início do Rodapé */}
       <Footer />
-      {/* Fim do Rodapé */}
     </div>
   );
 }
