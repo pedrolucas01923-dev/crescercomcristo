@@ -25,7 +25,10 @@ const commonFeatures = [
 ];
 
 const premiumFeatures = [
-    "Todos os itens do plano Comum",
+    "Histórias Bíblicas Cativantes",
+    "Livros para Colorir",
+    "Testamentos Adaptados",
+    "Livros da Bíblia em Desenho",
     "Plano de Aplicação “15 Minutos com Jesus”",
     "Guia de Atividades Práticas",
     "5 Roteiros de Conversas de Fé",
