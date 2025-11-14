@@ -41,9 +41,9 @@ export function PricingModal({ isOpen, onClose }: PricingModalProps) {
             Comece hoje a transformar a vida espiritual da sua família.
           </DialogDescription>
         </DialogHeader>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
           {/* Plano Comum */}
-          <Card className="flex flex-col">
+          <Card className="flex flex-col h-full">
             <CardHeader className="text-center pb-2">
               <CardTitle className="font-headline text-lg text-foreground">COMUM</CardTitle>
             </CardHeader>
@@ -65,8 +65,8 @@ export function PricingModal({ isOpen, onClose }: PricingModalProps) {
           </Card>
 
           {/* Plano Premium */}
-          <Card className="flex flex-col border-2 border-primary shadow-primary/20 relative">
-             <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-3 py-0.5 rounded-full text-xs font-bold">
+          <Card className="flex flex-col border-2 border-primary shadow-primary/20 relative transform md:scale-105 bg-secondary/20">
+             <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-3 py-0.5 rounded-full text-xs font-bold shadow-lg">
               MAIS POPULAR
             </div>
             <CardHeader className="text-center pb-2 pt-8">
@@ -86,7 +86,7 @@ export function PricingModal({ isOpen, onClose }: PricingModalProps) {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full mt-auto bg-primary text-primary-foreground hover:bg-primary/90">Comprar Agora</Button>
+              <Button className="w-full mt-auto bg-accent text-accent-foreground hover:bg-accent/90 animate-pulse">Comprar Agora</Button>
             </CardContent>
           </Card>
         </div>
