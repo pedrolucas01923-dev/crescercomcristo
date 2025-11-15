@@ -45,26 +45,28 @@ export function EmotionalBenefits() {
             Mais que livros, momentos de fé e amor em família!
           </h2>
         </div>
-        <div className="mx-auto grid max-w-5xl gap-8 sm:grid-cols-1 md:grid-cols-3">
+        <div className="mx-auto grid max-w-5xl gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
           {benefits.map((benefit) => {
             const image = PlaceHolderImages.find((img) => img.id === benefit.id);
             return (
-              <Card key={benefit.id} className="overflow-hidden shadow-lg bg-card text-center border-2 border-primary/20 transition-all duration-300 hover:scale-105 hover:shadow-primary/20 hover:border-primary">
-                {image && (
-                    <div className="relative w-full aspect-[4/5]">
-                        <Image
-                          src={image.imageUrl}
-                          alt={benefit.title}
-                          fill
-                          className="object-cover"
-                          data-ai-hint={image.imageHint}
-                        />
-                    </div>
-                )}
-                <CardHeader className="p-4">
-                  <CardTitle className="font-headline text-sm text-foreground h-10 flex items-center justify-center">{benefit.title}</CardTitle>
-                </CardHeader>
-              </Card>
+              <div key={benefit.id} className="flex justify-center sm:col-span-1">
+                <Card className="overflow-hidden shadow-lg bg-card text-center border-2 border-primary/20 transition-all duration-300 hover:scale-105 hover:shadow-primary/20 hover:border-primary w-full max-w-xs sm:max-w-none">
+                  {image && (
+                      <div className="relative w-full aspect-[4/5]">
+                          <Image
+                            src={image.imageUrl}
+                            alt={benefit.title}
+                            fill
+                            className="object-cover"
+                            data-ai-hint={image.imageHint}
+                          />
+                      </div>
+                  )}
+                  <CardHeader className="p-4">
+                    <CardTitle className="font-headline text-sm text-foreground h-10 flex items-center justify-center">{benefit.title}</CardTitle>
+                  </CardHeader>
+                </Card>
+              </div>
             );
           })}
         </div>
