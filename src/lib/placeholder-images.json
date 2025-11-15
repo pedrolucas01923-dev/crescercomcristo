@@ -3,31 +3,31 @@
     {
       "id": "hero-mockup",
       "description": "Mockup of several colorful children's ebooks.",
-      "imageUrl": "https://imgur.com/gKHK0nm",
+      "imageUrl": "https://imgur.com/gKHK0nm.png",
       "imageHint": "ebooks mockup"
     },
     {
       "id": "product-comics",
       "description": "Thumbnail of a Christian comic book for kids.",
-      "imageUrl": "https://imgur.com/vy4hXOy",
+      "imageUrl": "https://imgur.com/pQcoe3F.png",
       "imageHint": "kids comic"
     },
     {
       "id": "product-bible-books",
       "description": "Thumbnail of a children's bible book.",
-      "imageUrl": "https://imgur.com/asFrWKG",
+      "imageUrl": "https://imgur.com/mz5DpBP.png",
       "imageHint": "childrens bible"
     },
     {
       "id": "product-testaments",
       "description": "Thumbnail of an illustrated book about the Old and New Testaments.",
-      "imageUrl": "https://imgur.com/LEOrQzm",
+      "imageUrl": "https://imgur.com/vy4hXOy.png",
       "imageHint": "illustrated bible"
     },
     {
       "id": "product-coloring",
       "description": "Thumbnail of a Christian-themed coloring book for children.",
-      "imageUrl": "https://imgur.com/mz5DpBP",
+      "imageUrl": "https://imgur.com/asFrWKG.png",
       "imageHint": "coloring book"
     },
     {
