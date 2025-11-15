@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { BookOpen, Palette, BookCopy, HeartHandshake } from 'lucide-react';
@@ -48,20 +49,22 @@ export function ProductFeatures() {
         </div>
         
         <div className="mb-12 md:mb-16">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                 {productImages.map(item => {
                     const image = PlaceHolderImages.find(img => img.id === item.id);
                     if (!image) return null;
                     return (
-                        <div key={item.id} className="overflow-hidden rounded-xl shadow-xl border-4 border-primary/30 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-primary">
-                            <Image
-                              src={image.imageUrl}
-                              alt={image.description}
-                              width={300}
-                              height={300}
-                              className="w-full h-auto object-cover aspect-square"
-                              data-ai-hint={image.imageHint}
-                            />
+                        <div key={item.id} className="flex justify-center">
+                            <div className="w-full max-w-[150px] md:max-w-none overflow-hidden rounded-xl shadow-xl border-4 border-primary/30 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-primary">
+                                <Image
+                                  src={image.imageUrl}
+                                  alt={image.description}
+                                  width={300}
+                                  height={300}
+                                  className="w-full h-auto object-cover aspect-square"
+                                  data-ai-hint={image.imageHint}
+                                />
+                            </div>
                         </div>
                     );
                 })}
