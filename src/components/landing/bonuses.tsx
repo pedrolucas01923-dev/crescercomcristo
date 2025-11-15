@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Gift, Palette, Heart, BookText } from 'lucide-react';
@@ -53,19 +54,8 @@ export function Bonuses() {
         <div className="mx-auto grid max-w-5xl gap-8 sm:grid-cols-2">
           {bonuses.map((bonus) => {
             const Icon = bonus.icon;
-            const image = PlaceHolderImages.find((img) => img.id === bonus.id);
             return (
               <Card key={bonus.id} className="overflow-hidden shadow-lg bg-card border-2 border-primary/20 transition-all hover:border-primary hover:shadow-primary/20 hover:shadow-2xl flex flex-col">
-                 {image && (
-                    <Image
-                      src={image.imageUrl}
-                      alt={bonus.title}
-                      width={400}
-                      height={300}
-                      className="w-full h-48 object-cover"
-                      data-ai-hint={image.imageHint}
-                    />
-                )}
                 <CardHeader>
                   <div className="flex items-start gap-3">
                     <div className="bg-primary/10 p-2.5 rounded-full mt-1">
