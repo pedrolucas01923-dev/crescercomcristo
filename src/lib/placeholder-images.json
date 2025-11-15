@@ -13,10 +13,10 @@
       "imageHint": "kids comic"
     },
     {
-      "id": "product-bible-books",
-      "description": "Thumbnail of a children's bible book.",
-      "imageUrl": "https://imgur.com/mz5DpBP.png",
-      "imageHint": "childrens bible"
+      "id": "product-coloring",
+      "description": "Thumbnail of a Christian-themed coloring book for children.",
+      "imageUrl": "https://imgur.com/asFrWKG.png",
+      "imageHint": "coloring book"
     },
     {
       "id": "product-testaments",
@@ -25,10 +25,10 @@
       "imageHint": "illustrated bible"
     },
     {
-      "id": "product-coloring",
-      "description": "Thumbnail of a Christian-themed coloring book for children.",
-      "imageUrl": "https://imgur.com/asFrWKG.png",
-      "imageHint": "coloring book"
+      "id": "product-bible-books",
+      "description": "Thumbnail of a children's bible book.",
+      "imageUrl": "https://imgur.com/mz5DpBP.png",
+      "imageHint": "childrens bible"
     },
     {
       "id": "bonus-plan",
@@ -63,19 +63,19 @@
     {
       "id": "benefit-quality-time",
       "description": "Family reading together, no screens visible.",
-      "imageUrl": "https://images.unsplash.com/photo-1713942590404-d6981e63fb56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmYW1pbHklMjByZWFkaW5nJTIwbm8lMjBzY3JlZW58ZW58MHx8fHwxNzYyNzE2NzEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/eVIflcw.png",
       "imageHint": "family reading no screen"
     },
     {
       "id": "benefit-seed-faith",
       "description": "Child praying peacefully.",
-      "imageUrl": "https://images.unsplash.com/photo-1442115597578-2d0fb2413734?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaGlsZCUyMHByYXlpbmd8ZW58MHx8fHwxNzYyNjA1NTAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/sHQLOxE.png",
       "imageHint": "child praying"
     },
     {
       "id": "benefit-memory",
       "description": "A happy family moment, laughing together.",
-      "imageUrl": "https://images.unsplash.com/photo-1758513423681-662999098875?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxoYXBweSUyMGZhbWlseSUyMG1vbWVudHxlbnwwfHx8fDE3NjI3MTY3MTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/QtqMJLz.png",
       "imageHint": "happy family moment"
     }
   ]
