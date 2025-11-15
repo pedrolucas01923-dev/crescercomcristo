@@ -2,6 +2,13 @@ import Image from 'next/image';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const benefits = [
   {
@@ -45,12 +52,53 @@ export function EmotionalBenefits() {
             Mais que livros, momentos de fé e amor em família!
           </h2>
         </div>
-        <div className="mx-auto grid max-w-5xl gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        
+        {/* Carousel for Mobile */}
+        <div className="sm:hidden">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full max-w-xs mx-auto"
+            >
+              <CarouselContent>
+                {benefits.map((benefit) => {
+                  const image = PlaceHolderImages.find((img) => img.id === benefit.id);
+                  return (
+                    <CarouselItem key={benefit.id}>
+                       <Card className="overflow-hidden shadow-lg bg-card text-center border-2 border-primary/20">
+                        {image && (
+                            <div className="relative w-full aspect-[4/5]">
+                                <Image
+                                  src={image.imageUrl}
+                                  alt={benefit.title}
+                                  fill
+                                  className="object-cover"
+                                  data-ai-hint={image.imageHint}
+                                />
+                            </div>
+                        )}
+                        <CardHeader className="p-4">
+                          <CardTitle className="font-headline text-sm text-foreground h-10 flex items-center justify-center">{benefit.title}</CardTitle>
+                        </CardHeader>
+                      </Card>
+                    </CarouselItem>
+                  )
+                })}
+              </CarouselContent>
+              <CarouselPrevious className="-left-4" />
+              <CarouselNext className="-right-4" />
+            </Carousel>
+        </div>
+
+        {/* Grid for Desktop */}
+        <div className="mx-auto max-w-5xl gap-8 hidden sm:grid sm:grid-cols-2 md:grid-cols-3">
           {benefits.map((benefit) => {
             const image = PlaceHolderImages.find((img) => img.id === benefit.id);
             return (
-              <div key={benefit.id} className="flex justify-center sm:col-span-1">
-                <Card className="overflow-hidden shadow-lg bg-card text-center border-2 border-primary/20 transition-all duration-300 hover:scale-105 hover:shadow-primary/20 hover:border-primary w-full max-w-xs sm:max-w-none">
+              <div key={benefit.id} className="flex justify-center">
+                <Card className="overflow-hidden shadow-lg bg-card text-center border-2 border-primary/20 transition-all duration-300 hover:scale-105 hover:shadow-primary/20 hover:border-primary w-full max-w-xs">
                   {image && (
                       <div className="relative w-full aspect-[4/5]">
                           <Image
@@ -70,6 +118,7 @@ export function EmotionalBenefits() {
             );
           })}
         </div>
+
         <div className="mt-16 space-y-8">
             <h3 className="text-center font-headline text-2xl font-bold text-primary">O que as famílias estão dizendo:</h3>
             <div className="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
