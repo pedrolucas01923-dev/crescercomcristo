@@ -51,18 +51,18 @@ export function EmotionalBenefits() {
             return (
               <Card key={benefit.id} className="overflow-hidden shadow-lg bg-card text-center border-2 border-primary/20 transition-all duration-300 hover:scale-105 hover:shadow-primary/20 hover:border-primary">
                 {image && (
-                    <div className="relative w-full" style={{paddingBottom: '125%'}}>
+                    <div className="relative w-full aspect-[4/5]">
                         <Image
                           src={image.imageUrl}
                           alt={benefit.title}
-                          layout="fill"
+                          fill
                           className="object-cover"
                           data-ai-hint={image.imageHint}
                         />
                     </div>
                 )}
                 <CardHeader className="p-4">
-                  <CardTitle className="font-headline text-base text-foreground">{benefit.title}</CardTitle>
+                  <CardTitle className="font-headline text-sm text-foreground h-10 flex items-center justify-center">{benefit.title}</CardTitle>
                 </CardHeader>
               </Card>
             );
@@ -78,8 +78,8 @@ export function EmotionalBenefits() {
                             <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
                         </Avatar>
                         <div>
-                            <p className="italic text-muted-foreground">"{testimonial.text}"</p>
-                            <p className="font-bold text-right mt-2 text-primary">- {testimonial.name}, <span className="font-normal text-sm">{testimonial.role}</span></p>
+                            <p className="italic text-muted-foreground text-sm md:text-base">"{testimonial.text}"</p>
+                            <p className="font-bold text-right mt-2 text-primary text-sm">- {testimonial.name}, <span className="font-normal text-xs">{testimonial.role}</span></p>
                         </div>
                     </div>
                 ))}
