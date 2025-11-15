@@ -53,7 +53,7 @@ export function ProductFeatures() {
                     const image = PlaceHolderImages.find(img => img.id === item.id);
                     if (!image) return null;
                     return (
-                        <div key={item.id} className="overflow-hidden rounded-xl shadow-lg border-2 border-primary/20 transition-all duration-300 hover:scale-105 hover:shadow-primary/20 hover:border-primary">
+                        <div key={item.id} className="overflow-hidden rounded-xl shadow-xl border-4 border-primary/30 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-primary">
                             <Image
                               src={image.imageUrl}
                               alt={image.description}
