@@ -45,52 +45,52 @@ export function PricingModal({ isOpen, onClose }: PricingModalProps) {
             Comece hoje a transformar a vida espiritual da sua família.
           </DialogDescription>
         </DialogHeader>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-start">
           {/* Plano Comum */}
           <Card className="flex flex-col h-full">
             <CardHeader className="text-center pb-2">
-              <CardTitle className="font-headline text-lg text-foreground">COMUM</CardTitle>
+              <CardTitle className="font-headline text-base sm:text-lg text-foreground">COMUM</CardTitle>
             </CardHeader>
             <CardContent className="flex flex-col flex-grow justify-between p-4">
-              <div className="text-center mb-4">
-                <p className="text-2xl font-bold">R$ 9,99</p>
+              <div className="text-center mb-2">
+                <p className="text-xl sm:text-2xl font-bold">R$ 9,99</p>
                 <p className="text-xs text-muted-foreground">Pagamento único</p>
               </div>
-              <ul className="space-y-1 mb-4 text-xs">
+              <ul className="space-y-1 my-2 text-xs">
                 {commonFeatures.map((feature, i) => (
                   <li key={i} className="flex items-center gap-2">
-                    <Check className="h-3 w-3 text-green-500" />
+                    <Check className="h-3 w-3 text-green-500 flex-shrink-0" />
                     <span className="text-muted-foreground">{feature}</span>
                   </li>
                 ))}
               </ul>
-              <Button className="w-full mt-auto" variant="outline">Comprar Agora</Button>
+              <Button className="w-full mt-auto text-sm h-9" variant="outline">Comprar Agora</Button>
             </CardContent>
           </Card>
 
           {/* Plano Premium */}
-          <Card className="flex flex-col border-2 border-primary shadow-primary/20 relative transform sm:scale-105 bg-secondary/20">
+          <Card className="flex flex-col border-2 border-primary shadow-primary/20 relative bg-secondary/20 h-full">
              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-3 py-0.5 rounded-full text-xs font-bold shadow-lg">
               MAIS POPULAR
             </div>
-            <CardHeader className="text-center pb-2 pt-8">
-              <CardTitle className="font-headline text-lg text-foreground">PREMIUM</CardTitle>
+            <CardHeader className="text-center pb-2 pt-6 sm:pt-8">
+              <CardTitle className="font-headline text-base sm:text-lg text-foreground">PREMIUM</CardTitle>
             </CardHeader>
             <CardContent className="flex flex-col flex-grow justify-between p-4">
-              <div className="text-center mb-4">
-                 <p className="text-sm text-muted-foreground line-through">de R$ 39,99</p>
-                <p className="text-2xl font-bold text-primary">por R$ 19,99</p>
+              <div className="text-center mb-2">
+                 <p className="text-xs sm:text-sm text-muted-foreground line-through">de R$ 39,99</p>
+                <p className="text-xl sm:text-2xl font-bold text-primary">por R$ 19,99</p>
                 <p className="text-xs text-muted-foreground">Pagamento único</p>
               </div>
-              <ul className="space-y-1 mb-4 text-xs">
+              <ul className="space-y-1 my-2 text-xs">
                  {premiumFeatures.map((feature, i) => (
                   <li key={i} className="flex items-center gap-2">
-                    <Check className="h-3 w-3 text-green-500" />
+                    <Check className="h-3 w-3 text-green-500 flex-shrink-0" />
                     <span className="text-muted-foreground">{feature}</span>
                   </li>
                 ))}
               </ul>
-              <Button className="w-full mt-auto bg-accent text-accent-foreground hover:bg-accent/90 animate-pulse">Comprar Agora</Button>
+              <Button className="w-full mt-auto text-sm h-9 bg-accent text-accent-foreground hover:bg-accent/90 animate-pulse">Comprar Agora</Button>
             </CardContent>
           </Card>
         </div>
