@@ -38,14 +38,14 @@ const premiumFeatures = [
 export function PricingModal({ isOpen, onClose }: PricingModalProps) {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-xl p-4 sm:p-6 w-[90vw] sm:w-full rounded-lg">
+      <DialogContent className="max-w-md p-4 sm:p-6 w-[90vw] rounded-lg">
         <DialogHeader className="text-center mb-4">
           <DialogTitle className="font-headline text-xl md:text-2xl text-primary">Escolha o seu plano ideal</DialogTitle>
           <DialogDescription className="text-sm text-muted-foreground">
             Comece hoje a transformar a vida espiritual da sua família.
           </DialogDescription>
         </DialogHeader>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
           {/* Plano Comum */}
           <Card className="flex flex-col h-full">
             <CardHeader className="text-center pb-2">
@@ -69,7 +69,7 @@ export function PricingModal({ isOpen, onClose }: PricingModalProps) {
           </Card>
 
           {/* Plano Premium */}
-          <Card className="flex flex-col border-2 border-primary shadow-primary/20 relative transform md:scale-105 bg-secondary/20">
+          <Card className="flex flex-col border-2 border-primary shadow-primary/20 relative transform sm:scale-105 bg-secondary/20">
              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-3 py-0.5 rounded-full text-xs font-bold shadow-lg">
               MAIS POPULAR
             </div>
