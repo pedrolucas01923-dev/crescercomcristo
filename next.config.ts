@@ -42,11 +42,8 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  devIndicators: {
-    buildActivity: false,
-  },
-  // @ts-ignore - Turbopack doesn't support this yet
   experimental: {
+    // @ts-ignore - Turbopack doesn't support this yet
     allowedDevOrigins: [
       'https://6000-firebase-studio-1762109127374.cluster-hlmk2l2htragyudeyf6f3tzsi6.cloudworkstations.dev',
     ],
