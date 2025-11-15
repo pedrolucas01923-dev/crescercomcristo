@@ -38,7 +38,7 @@ const premiumFeatures = [
 export function PricingModal({ isOpen, onClose }: PricingModalProps) {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-xl p-6">
+      <DialogContent className="max-w-xl p-4 sm:p-6 w-[90vw] sm:w-full rounded-lg">
         <DialogHeader className="text-center mb-4">
           <DialogTitle className="font-headline text-xl md:text-2xl text-primary">Escolha o seu plano ideal</DialogTitle>
           <DialogDescription className="text-sm text-muted-foreground">
