@@ -27,10 +27,10 @@ const features = [
 ];
 
 const productImages = [
-  'product-comics',
-  'product-bible-books',
-  'product-testaments',
-  'product-coloring',
+  {id: 'product-comics', title: "Histórias Bíblicas Cativantes" },
+  {id: 'product-coloring', title: "Livros para Colorir" },
+  {id: 'product-testaments', title: "Testamentos Adaptados" },
+  {id: 'product-bible-books', title: "Valores Fundamentais"},
 ];
 
 
@@ -49,17 +49,17 @@ export function ProductFeatures() {
         
         <div className="mb-12 md:mb-16">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {productImages.map(id => {
-                    const image = PlaceHolderImages.find(img => img.id === id);
+                {productImages.map(item => {
+                    const image = PlaceHolderImages.find(img => img.id === item.id);
                     if (!image) return null;
                     return (
-                        <div key={id} className="overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                        <div key={item.id} className="overflow-hidden rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
                             <Image
                               src={image.imageUrl}
                               alt={image.description}
                               width={300}
                               height={300}
-                              className="w-full h-auto object-cover"
+                              className="w-full h-auto object-cover aspect-square"
                               data-ai-hint={image.imageHint}
                             />
                         </div>

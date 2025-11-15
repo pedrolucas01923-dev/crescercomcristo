@@ -9,25 +9,25 @@
     {
       "id": "product-comics",
       "description": "Thumbnail of a Christian comic book for kids.",
-      "imageUrl": "https://images.unsplash.com/photo-1661294667246-2492ae1447b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxraWRzJTIwY29taWN8ZW58MHx8fHwxNzYyNzE2MDUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/lrfUUIV.png",
       "imageHint": "kids comic"
     },
     {
       "id": "product-bible-books",
       "description": "Thumbnail of a children's bible book.",
-      "imageUrl": "https://images.unsplash.com/photo-1604146390776-b4ea28b51f98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaGlsZHJlbnMlMjBiaWJsZXxlbnwwfHx8fDE3NjI3MTYwNTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/mz5DpBP.png",
       "imageHint": "childrens bible"
     },
     {
       "id": "product-testaments",
       "description": "Thumbnail of an illustrated book about the Old and New Testaments.",
-      "imageUrl": "https://images.unsplash.com/photo-1525213386932-96f9ea565e69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxpbGx1c3RyYXRlZCUyMGJpYmxlfGVufDB8fHx8MTc2MjcxNjA1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/NYrpNIS.png",
       "imageHint": "illustrated bible"
     },
     {
       "id": "product-coloring",
       "description": "Thumbnail of a Christian-themed coloring book for children.",
-      "imageUrl": "https://images.unsplash.com/photo-1731624637604-eba223ee268d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxjb2xvcmluZyUyMGJvb2t8ZW58MHx8fHwxNzYyNzE2MDQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.imgur.com/asFrWKG.png",
       "imageHint": "coloring book"
     },
     {
