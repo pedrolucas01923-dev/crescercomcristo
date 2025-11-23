@@ -36,15 +36,15 @@ export function PricingModal({ isOpen, onClose }: PricingModalProps) {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl p-4 sm:p-6 w-[95vw] md:w-full rounded-lg">
-        <DialogHeader className="text-center mb-4 col-span-1 sm:col-span-2">
+        <DialogHeader className="text-center mb-4">
           <DialogTitle className="font-headline text-xl md:text-2xl text-primary">Escolha o seu plano ideal</DialogTitle>
           <DialogDescription className="text-sm text-muted-foreground">
             Comece hoje a transformar a vida espiritual da sua família.
           </DialogDescription>
         </DialogHeader>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch w-full justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch w-full">
           {/* Plano Comum */}
-          <Card className="flex flex-col h-full">
+          <Card className="flex flex-col">
             <CardHeader className="text-center pb-2">
               <CardTitle className="font-headline text-base sm:text-lg text-foreground">COMUM</CardTitle>
             </CardHeader>
@@ -53,7 +53,7 @@ export function PricingModal({ isOpen, onClose }: PricingModalProps) {
                 <p className="text-xl sm:text-2xl font-bold">R$ 9,99</p>
                 <p className="text-xs text-muted-foreground">Pagamento único</p>
               </div>
-              <ul className="space-y-1 my-2 text-xs flex-grow">
+              <ul className="space-y-1 my-4 text-xs flex-grow">
                 {commonFeatures.map((feature, i) => (
                   <li key={i} className="flex items-center gap-2">
                     <Check className="h-3 w-3 text-green-500 flex-shrink-0" />
@@ -66,7 +66,7 @@ export function PricingModal({ isOpen, onClose }: PricingModalProps) {
           </Card>
 
           {/* Plano Premium */}
-          <Card className="flex flex-col border-2 border-primary shadow-primary/20 relative bg-secondary/20 h-full">
+          <Card className="flex flex-col border-2 border-primary shadow-primary/20 relative bg-secondary/20">
              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-3 py-0.5 rounded-full text-xs font-bold shadow-lg">
               MAIS POPULAR
             </div>
@@ -79,7 +79,7 @@ export function PricingModal({ isOpen, onClose }: PricingModalProps) {
                 <p className="text-xl sm:text-2xl font-bold text-primary">por R$ 19,99</p>
                 <p className="text-xs text-muted-foreground">Pagamento único</p>
               </div>
-              <ul className="space-y-1 my-2 text-xs flex-grow">
+              <ul className="space-y-1 my-4 text-xs flex-grow">
                  {premiumFeatures.map((feature, i) => (
                   <li key={i} className="flex items-center gap-2">
                     <Check className="h-3 w-3 text-green-500 flex-shrink-0" />
