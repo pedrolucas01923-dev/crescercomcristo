@@ -19,7 +19,7 @@ interface PricingModalProps {
 
 const commonFeatures = [
     "Histórias Bíblicas Cativantes",
-    "Testamentos Adaptados",
+    "10 mandamentos adaptados",
     "Livros da Bíblia em Desenho",
 ];
 
@@ -35,14 +35,14 @@ const premiumFeatures = [
 export function PricingModal({ isOpen, onClose }: PricingModalProps) {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-md p-4 sm:p-6 w-[90vw] rounded-lg">
-        <DialogHeader className="text-center mb-4">
+      <DialogContent className="max-w-md p-4 sm:p-6 w-[90vw] sm:w-auto rounded-lg sm:max-w-xl sm:grid-cols-2">
+        <DialogHeader className="text-center mb-4 col-span-1 sm:col-span-2">
           <DialogTitle className="font-headline text-xl md:text-2xl text-primary">Escolha o seu plano ideal</DialogTitle>
           <DialogDescription className="text-sm text-muted-foreground">
             Comece hoje a transformar a vida espiritual da sua família.
           </DialogDescription>
         </DialogHeader>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-start">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-start w-full">
           {/* Plano Comum */}
           <Card className="flex flex-col h-full">
             <CardHeader className="text-center pb-2">
