@@ -11,6 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import Link from "next/link";
 
 interface PricingModalProps {
   isOpen: boolean;
@@ -61,7 +62,9 @@ export function PricingModal({ isOpen, onClose }: PricingModalProps) {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full mt-auto text-sm h-9" variant="outline">Comprar Agora</Button>
+              <Button className="w-full mt-auto text-sm h-9" variant="outline" asChild>
+                <Link href="https://www.ggcheckout.com/checkout/v2/Pcz9vKwvkZYYRmYggYIM">Comprar Agora</Link>
+              </Button>
             </CardContent>
           </Card>
 
@@ -87,7 +90,9 @@ export function PricingModal({ isOpen, onClose }: PricingModalProps) {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full mt-auto text-sm h-9 bg-accent text-accent-foreground hover:bg-accent/90 animate-pulse">Comprar Agora</Button>
+                <Button className="w-full mt-auto text-sm h-9 bg-accent text-accent-foreground hover:bg-accent/90 animate-pulse" asChild>
+                  <Link href="https://www.ggcheckout.com/checkout/v2/RYEeBFPxmvyVyEzNEkFU">Comprar Agora</Link>
+                </Button>
             </CardContent>
           </Card>
         </div>
