@@ -29,9 +29,7 @@ const premiumFeatures = [
     "Livros para Colorir",
     "Testamentos Adaptados",
     "Livros da Bíblia em Desenho",
-    "Plano de Aplicação “15 Minutos com Jesus”",
     "Guia de Atividades Práticas",
-    "5 Roteiros de Conversas de Fé",
     "Cartões de Versículos para Memorizar",
 ];
 
