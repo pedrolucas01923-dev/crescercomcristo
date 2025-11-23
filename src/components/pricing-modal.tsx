@@ -19,7 +19,6 @@ interface PricingModalProps {
 
 const commonFeatures = [
     "Histórias Bíblicas Cativantes",
-    "Livros para Colorir",
     "Testamentos Adaptados",
     "Livros da Bíblia em Desenho",
 ];
