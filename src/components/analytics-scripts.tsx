@@ -9,7 +9,7 @@ export function AnalyticsScripts() {
         id="utmify-pixel-id"
         strategy="beforeInteractive"
         dangerouslySetInnerHTML={{
-          __html: `window.pixelId = "6921f7da921ed0cd2b9afa4f";`,
+          __html: `window.pixelId = "69251455dbf269038a81ba49";`,
         }}
       />
       <Script
