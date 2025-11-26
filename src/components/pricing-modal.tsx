@@ -34,6 +34,26 @@ const premiumFeatures = [
 ];
 
 export function PricingModal({ isOpen, onClose }: PricingModalProps) {
+  
+  const handleCheckoutClick = (checkoutUrl: string) => {
+    // 1. Injeta o script do pixel no momento do clique
+    const pixelId = "6921f7da921ed0cd2b9afa4f";
+    
+    // Evita adicionar o script múltiplas vezes se o modal for reaberto e clicado de novo
+    if (!document.getElementById(`utmify-pixel-${pixelId}`)) {
+      window.pixelId = pixelId;
+      const script = document.createElement("script");
+      script.id = `utmify-pixel-${pixelId}`;
+      script.setAttribute("async", "");
+      script.setAttribute("defer", "");
+      script.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(script);
+    }
+    
+    // 2. Redireciona o usuário para o checkout
+    window.location.href = checkoutUrl;
+  };
+
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-4xl p-4 sm:p-6 w-[95vw] md:w-full rounded-lg">
@@ -62,8 +82,12 @@ export function PricingModal({ isOpen, onClose }: PricingModalProps) {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full mt-auto text-sm h-9" variant="outline" asChild>
-                <Link href="https://www.ggcheckout.com/checkout/v2/Pcz9vKwvkZYYRmYggYIM">Comprar Agora</Link>
+              <Button 
+                className="w-full mt-auto text-sm h-9" 
+                variant="outline"
+                onClick={() => handleCheckoutClick("https://www.ggcheckout.com/checkout/v2/Pcz9vKwvkZYYRmYggYIM")}
+              >
+                Comprar Agora
               </Button>
             </CardContent>
           </Card>
@@ -90,8 +114,11 @@ export function PricingModal({ isOpen, onClose }: PricingModalProps) {
                   </li>
                 ))}
               </ul>
-                <Button className="w-full mt-auto text-sm h-9 bg-accent text-accent-foreground hover:bg-accent/90 animate-pulse" asChild>
-                  <Link href="https://www.ggcheckout.com/checkout/v2/RYEeBFPxmvyVyEzNEkFU">Comprar Agora</Link>
+                <Button 
+                  className="w-full mt-auto text-sm h-9 bg-accent text-accent-foreground hover:bg-accent/90 animate-pulse" 
+                  onClick={() => handleCheckoutClick("https://www.ggcheckout.com/checkout/v2/RYEeBFPxmvyVyEzNEkFU")}
+                >
+                  Comprar Agora
                 </Button>
             </CardContent>
           </Card>
