@@ -1,7 +1,6 @@
 import type {Metadata} from 'next';
 import { Toaster } from "@/components/ui/toaster"
 import './globals.css';
-import { AnalyticsScripts } from '@/components/analytics-scripts';
 
 export const metadata: Metadata = {
   title: 'Crescendo com Cristo',
@@ -24,7 +23,6 @@ export default function RootLayout({
       <body className="font-body antialiased">
         {children}
         <Toaster />
-        <AnalyticsScripts />
       </body>
     </html>
   );
