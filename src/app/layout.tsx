@@ -15,6 +15,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        {/*
+          O local ideal para adicionar scripts de análise (como o pixel) seria aqui.
+          Para evitar problemas, o ideal seria usar um componente específico 
+          para carregar o script apenas depois que a página estivesse interativa.
+          Exemplo: <AnalyticsScripts /> 
+        */}
         <link rel="icon" href="https://i.imgur.com/h3VeAXl.png" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
