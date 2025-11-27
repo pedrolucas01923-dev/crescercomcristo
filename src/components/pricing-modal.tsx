@@ -85,7 +85,7 @@ export function PricingModal({ isOpen, onClose }: PricingModalProps) {
               <Button 
                 className="w-full mt-auto text-sm h-9" 
                 variant="outline"
-                onClick={() => handleCheckoutClick("https://www.ggcheckout.com/checkout/v2/Pcz9vKwvkZYYRmYggYIM")}
+                onClick={() => handleCheckoutClick("https://pay.crescercomcristobr.shop/Pcz9vKwvkZYYRmYggYIM")}
               >
                 Comprar Agora
               </Button>
@@ -116,7 +116,7 @@ export function PricingModal({ isOpen, onClose }: PricingModalProps) {
               </ul>
                 <Button 
                   className="w-full mt-auto text-sm h-9 bg-accent text-accent-foreground hover:bg-accent/90 animate-pulse" 
-                  onClick={() => handleCheckoutClick("https://www.ggcheckout.com/checkout/v2/RYEeBFPxmvyVyEzNEkFU")}
+                  onClick={() => handleCheckoutClick("https://pay.crescercomcristobr.shop/RYEeBFPxmvyVyEzNEkFU")}
                 >
                   Comprar Agora
                 </Button>
