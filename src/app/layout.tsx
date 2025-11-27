@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Crescendo com Cristo',
   description: 'Ensine valores cristãos de forma divertida e inesquecível!',
   icons: {
-    icon: 'https://imgur.com/poeYT1D',
+    icon: 'https://i.imgur.com/poeYT1D.png',
   },
 };
 
